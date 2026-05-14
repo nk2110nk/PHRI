@@ -1,12 +1,23 @@
 from collections import deque
+import distutils.version
 import os
-from typing import Union, Optional
-import gymnasium as gym
-from gymnasium import register, spaces
+from typing import List, Tuple, Union, Optional
+try:
+    import gymnasium as gym
+    from gymnasium import register, spaces
+except ImportError:
+    import gym
+    from gym import spaces
+    from gym.envs.registration import register
 from stable_baselines3.common.vec_env import (
     VecEnv,
+    DummyVecEnv,
 )
-from stable_baselines3.common.vec_env.patch_gym import _patch_env
+try:
+    from stable_baselines3.common.vec_env.patch_gym import _patch_env
+except ImportError:
+    def _patch_env(env):
+        return env
 from stable_baselines3.common.monitor import Monitor
 
 import numpy as np
@@ -16,7 +27,6 @@ import torch.nn.functional as F
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 
-from envs.dummy_vec_env import DummyVecEnv
 from policy import MiPNPolicy
 from rollout_buffer import RolloutBuffer
 
@@ -25,9 +35,15 @@ import random
 import itertools
 
 ENV_NAME = 'IssueActionEnv-{}-v0'
+DEFAULT_GENERAL_DOMAIN = 'EnergySmall_A'
+DEFAULT_OBS_LAYOUT = 'padded_time_last'
 
 def register_neg_env(issue):
     env_name = ENV_NAME.format(issue)
+    registry = getattr(gym.envs, "registry", {})
+    registered = env_name in registry.env_specs if hasattr(registry, "env_specs") else env_name in registry
+    if registered:
+        return env_name
     register(
         id=env_name,
         entry_point='envs.env:IssueActionEnv',
@@ -99,14 +115,15 @@ def make_vec_env(
 
     vec_env = vec_env_cls([make_env(i + start_index) for i in range(n_envs)], **vec_env_kwargs)
     # Prepare the seeds for the first reset
-    vec_env.seed(seed)
+    if seed is not None:
+        vec_env.seed(seed)
     return vec_env
 
 class PPO():
     def __init__(
         self,
-        issue: Optional[Union[str, list[str]]] = None,
-        agents: Optional[Union[str, list[str]]] = ['Boulware', 'Boulware'],
+        issue: Optional[Union[str, List[str]]] = None,
+        agents: Optional[Union[str, List[str]]] = ['Boulware', 'Boulware'],
         n_envs: int = 4,
         learning_rate: float = 3e-4,
         n_rollout_steps: int = 2048,
@@ -119,16 +136,20 @@ class PPO():
         ent_coef: float = 0.0,
         vf_coef: float = 0.5,
         max_grad_norm: float = 0.5,
-        obs_space: Optional[tuple[int,...]] = None,
-        action_space: Optional[tuple[int,...]] = None,
+        obs_space: Optional[Tuple[int, ...]] = None,
+        action_space: Optional[Tuple[int, ...]] = None,
         device: torch.device = "cuda:1",
         model: Optional[nn.Module] = None,
         random_train: bool = False,
+        general_domain: Optional[str] = DEFAULT_GENERAL_DOMAIN,
+        obs_layout: str = DEFAULT_OBS_LAYOUT,
     ) -> None:
         
         self.issue = issue
         self.agents = agents
         self.n_envs = n_envs
+        self.general_domain = general_domain
+        self.obs_layout = obs_layout
         # 複数環境リスト作成
         self.env_list: list[VecEnv] = self.make_env_list()
         self.env = self.env_list[0]
@@ -146,8 +167,9 @@ class PPO():
         self.vf_coef = vf_coef
         self.max_grad_norm = max_grad_norm
 
-        self.obs_space = obs_space if obs_space is not None else self.env.observation_space
-        self.action_space = action_space if action_space is not None else self.env.action_space
+        general_obs_space, general_action_space = self.make_general_spaces()
+        self.obs_space = obs_space if obs_space is not None else general_obs_space
+        self.action_space = action_space if action_space is not None else general_action_space
 
 
         self.device = self.get_device(device)
@@ -168,6 +190,8 @@ class PPO():
             self.model = model
 
         self.model.to(self.device)
+        if hasattr(self.model, "device"):
+            self.model.device = self.device
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.learning_rate, eps=1e-5)
 
         self.episode_frame_numbers = None
@@ -177,8 +201,8 @@ class PPO():
         self.rollout_buffer_list = [RolloutBuffer(
             buffer_size=self.n_rollout_steps,
             n_envs=self.n_envs,
-            obs_space=e.observation_space,
-            action_space=e.action_space,
+            obs_space=self.obs_space,
+            action_space=self.action_space,
             device=self.device,
             gamma=self.gamma,
             gae_lambda=self.gae_lambda,
@@ -199,9 +223,102 @@ class PPO():
         
         for i in self.issue:
             env_name = register_neg_env(i)
-            env = make_vec_env(env_name, n_envs=self.n_envs, wrapper_class=Monitor,wrapper_kwargs={"info_keywords":tuple(["state",])})
+            env = make_vec_env(env_name, n_envs=self.n_envs)
             env_list.append(env)
         return env_list
+
+    @staticmethod
+    def _get_nvec(action_space) -> np.ndarray:
+        if not hasattr(action_space, "nvec"):
+            raise ValueError(f"MiPN_Negotiator requires MultiDiscrete-like action spaces, got {type(action_space)}")
+        return np.asarray(action_space.nvec, dtype=np.int64)
+
+    @staticmethod
+    def _obs_dim(observation_space) -> int:
+        return int(np.prod(observation_space.shape))
+
+    def make_general_spaces(self):
+        general_env = None
+        space_envs = list(self.env_list)
+        try:
+            if self.general_domain and self.general_domain not in self.issue:
+                env_name = register_neg_env(self.general_domain)
+                general_env = make_vec_env(env_name, n_envs=1)
+                space_envs.append(general_env)
+
+            max_obs_dim = max(self._obs_dim(env.observation_space) for env in space_envs)
+            env_nvecs = [self._get_nvec(env.action_space) for env in space_envs]
+            max_issue_count = max(len(nvec) - 1 for nvec in env_nvecs)
+            max_issue_nvec = []
+            for issue_idx in range(max_issue_count):
+                max_issue_nvec.append(max(int(nvec[issue_idx]) for nvec in env_nvecs if issue_idx < len(nvec) - 1))
+            accept_n = max(int(nvec[-1]) for nvec in env_nvecs)
+            obs_space = spaces.Box(low=0., high=1., shape=(max_obs_dim,), dtype=np.float32)
+            action_space = spaces.MultiDiscrete(max_issue_nvec + [accept_n])
+            return obs_space, action_space
+        finally:
+            if general_env is not None:
+                general_env.close()
+
+    def _pad_obs(self, obs):
+        obs = np.asarray(obs, dtype=np.float32)
+        if obs.ndim == 1:
+            obs = obs.reshape(1, -1)
+        obs = obs.reshape(obs.shape[0], -1)
+        target_dim = self.obs_space.shape[0]
+        if self.obs_layout == 'legacy':
+            if obs.shape[1] == target_dim:
+                return obs
+            if obs.shape[1] > target_dim:
+                raise ValueError(f"Observation dim {obs.shape[1]} exceeds MiPN_Negotiator dim {target_dim}")
+            padded = np.zeros((obs.shape[0], target_dim), dtype=np.float32)
+            padded[:, :obs.shape[1]] = obs
+            return padded
+
+        # OnehotObserve2nT appends relative_time as the final raw feature.
+        # Keep that time feature at the final padded index for every domain.
+        raw_bid_dim = obs.shape[1] - 1
+        target_bid_dim = target_dim - 1
+        if raw_bid_dim > target_bid_dim:
+            raise ValueError(f"Observation dim {obs.shape[1]} exceeds MiPN_Negotiator dim {target_dim}")
+        padded = np.zeros((obs.shape[0], target_dim), dtype=np.float32)
+        padded[:, :raw_bid_dim] = obs[:, :raw_bid_dim]
+        padded[:, -1] = obs[:, -1]
+        return padded
+
+    def _general_action_nvec(self, env: VecEnv) -> np.ndarray:
+        env_nvec = self._get_nvec(env.action_space)
+        general_nvec = np.zeros(len(self.action_space.nvec), dtype=np.int64)
+        issue_count = len(env_nvec) - 1
+        general_nvec[:issue_count] = env_nvec[:-1]
+        general_nvec[-1] = env_nvec[-1]
+        return general_nvec
+
+    def _action_nvec_batch(self, env: VecEnv) -> np.ndarray:
+        return np.repeat(self._general_action_nvec(env)[None, :], self.n_envs, axis=0)
+
+    def _compact_actions(self, actions: np.ndarray, env: VecEnv) -> np.ndarray:
+        env_nvec = self._get_nvec(env.action_space)
+        issue_count = len(env_nvec) - 1
+        compact = np.zeros((actions.shape[0], len(env_nvec)), dtype=np.int64)
+        compact[:, :issue_count] = actions[:, :issue_count]
+        compact[:, -1] = actions[:, -1]
+        return compact
+
+    @staticmethod
+    def _unwrap_env(env):
+        while hasattr(env, "env"):
+            env = env.env
+        return env
+
+    def _set_vec_options(self, env: VecEnv, options: dict):
+        if hasattr(env, "set_options"):
+            env.set_options(options)
+            return
+        for sub_env in getattr(env, "envs", []):
+            raw_env = self._unwrap_env(sub_env)
+            for key, value in options.items():
+                setattr(raw_env, key, value)
     
     def on_rollout_start(self):
         self.episode_frame_numbers.clear()
@@ -211,29 +328,33 @@ class PPO():
         self, 
         rollout_buffer: RolloutBuffer,
         n_rollout_steps: int,
-        agent_id: list[int], # 変更箇所 #この部分の型変更にうまく対応できるようにする
+        agent_id: List[int], # 変更箇所 #この部分の型変更にうまく対応できるようにする
     ):
         self.model.eval()
         n_steps = 0
         rollout_buffer.reset()
         self.on_rollout_start()
         is_first_offer = [False] * self.env.num_envs
-        agent_idx = [agent_id] * self.env.num_envs
+        action_nvecs_np = self._action_nvec_batch(self.env)
+        action_nvecs = torch.as_tensor(action_nvecs_np, device=self.device, dtype=torch.long)
 
         with tqdm(total=n_rollout_steps) as pbar:
             while n_steps < n_rollout_steps:
                 with torch.no_grad():
                     for i in range(self.env.num_envs):
-                        if self.env.envs[i].state is None and self.env.envs[i].is_first_turn:
+                        raw_env = self._unwrap_env(self.env.envs[i])
+                        if getattr(raw_env, "state", None) is None:
                             is_first_offer[i] = True
                     # 行動選択
-                    actions, values, log_probs = self.model.sample(self._last_obs, is_first_offer)
+                    actions, values, log_probs = self.model.sample(self._last_obs, is_first_offer, action_nvecs=action_nvecs)
                     is_first_offer = [False] * self.env.num_envs
                 actions = actions.cpu().numpy()
                 if isinstance(self.action_space, spaces.Box):
                     actions = np.clip(actions, self.action_space.low, self.action_space.high)
                 # 1ステップ進める
-                new_obs, rewards, dones, infos = self.env.step(actions)
+                env_actions = self._compact_actions(actions, self.env)
+                new_obs, rewards, dones, infos = self.env.step(env_actions)
+                new_obs = self._pad_obs(new_obs)
 
                 self.n_timesteps += self.n_envs
                 for idx, info in enumerate(infos):
@@ -249,15 +370,14 @@ class PPO():
                         and infos[idx].get("terminal_observation") is not None
                         and infos[idx].get("TimeLimit.truncated", False)
                     ):
-                        if self.random_train:
-                            agent_idx[idx] += np.random.randint(len(self.agents))
-                        else:
-                            agent_idx[idx] += 1
-                        self.env._options[idx] = self.agents[agent_idx[idx]%len(self.agents)]
-                        terminal_obs = torch.as_tensor(infos[idx]["terminal_observation"])
+                        terminal_obs = torch.as_tensor(
+                            self._pad_obs(infos[idx]["terminal_observation"]),
+                            device=self.device,
+                            dtype=torch.float32,
+                        )
                         with torch.no_grad():
                             terminal_value = self.model.predict_values(terminal_obs)  # type: ignore[arg-type]
-                        rewards[idx] += self.gamma * terminal_value
+                        rewards[idx] += self.gamma * terminal_value.item()
 
                 rollout_buffer.add(
                     self._last_obs,
@@ -266,6 +386,7 @@ class PPO():
                     self._last_episode_starts,
                     values,
                     log_probs,
+                    action_nvecs_np,
                 )
                 self._last_obs = new_obs
                 self._last_episode_starts = dones
@@ -316,24 +437,18 @@ class PPO():
                     agent_id = [idxes_a[iteration], idxes_b[iteration]] # 変更箇所
                     self.env = self.env_list[idxes_i[iteration]]
                     self.rollout_buffer = self.rollout_buffer_list[idxes_i[iteration]]
-                    self.env.set_options({"opponent": [self.agents[agent_id[0]], self.agents[agent_id[1]]]}) # 変更箇所
-                    self._last_obs = self.env.reset()
+                    self._set_vec_options(self.env, {"opponent": [self.agents[agent_id[0]], self.agents[agent_id[1]]]}) # 変更箇所
+                    self._last_obs = self._pad_obs(self.env.reset())
                     
                 # 総当たり方式
                 else:
-                    # 対戦相手が違う場合でexpertの場合
-                    if len(self.agents) == 2:
-                        pairs = list(itertools.combinations(range(len(self.agents)), 2)) # 変更箇所
-                    
-                    else:
-                        pairs = list(itertools.combinations_with_replacement(range(len(self.agents)), 2)) # 変更箇所
-                        
+                    pairs = list(itertools.combinations_with_replacement(range(len(self.agents)), 2)) # 変更箇所
                     agent_id = pairs[iteration%len(pairs)]  # 変更箇所
                     self.env = self.env_list[iteration%len(self.issue)]
                     self.rollout_buffer = self.rollout_buffer_list[iteration%len(self.issue)]
-                    self.env.set_options({"opponent": [self.agents[agent_id[0]], self.agents[agent_id[1]]]}) # 変更箇所
+                    self._set_vec_options(self.env, {"opponent": [self.agents[agent_id[0]], self.agents[agent_id[1]]]}) # 変更箇所
                     
-                    self._last_obs = self.env.reset()
+                    self._last_obs = self._pad_obs(self.env.reset())
 
                 # ロールアウト（シミュレーション）実行
                 self.collect_rollouts(self.rollout_buffer, n_rollout_steps=self.n_rollout_steps, agent_id=agent_id)
@@ -348,6 +463,12 @@ class PPO():
                 checkpoint = {
                     'model': self.model.state_dict(),
                     'optimizer': self.optimizer.state_dict(),
+                    'obs_space_shape': self.obs_space.shape,
+                    'action_nvec': np.asarray(self.action_space.nvec, dtype=np.int64),
+                    'issues': self.issue,
+                    'agents': self.agents,
+                    'general_domain': self.general_domain,
+                    'obs_layout': self.obs_layout,
                 }
                 torch.save(checkpoint, save_path+'/checkpoint.pt'.format())
         return self
@@ -358,7 +479,11 @@ class PPO():
             rollouts = self.rollout_buffer.get(self.batch_size)
             for rollout_data in rollouts:
                 actions = rollout_data.actions
-                values, log_prob, entropy = self.model.evaluate_actions(rollout_data.observations, actions)
+                values, log_prob, entropy = self.model.evaluate_actions(
+                    rollout_data.observations,
+                    actions,
+                    action_nvecs=rollout_data.action_nvecs,
+                )
                 values = values.flatten()
 
                 # Normalize advantages
@@ -432,4 +557,13 @@ class PPO():
             is_first_offer = [True]
         else:
             is_first_offer = [False]
-        return self.model.predict(observation, state, deterministic, is_first_offer=is_first_offer)
+        observation = self._pad_obs(observation)
+        action_nvecs = torch.as_tensor(self._action_nvec_batch(self.env)[:1], device=self.device, dtype=torch.long)
+        actions, state = self.model.predict(
+            observation,
+            state,
+            deterministic,
+            is_first_offer=is_first_offer,
+            action_nvecs=action_nvecs,
+        )
+        return self._compact_actions(np.asarray(actions).reshape(1, -1), self.env)[0], state

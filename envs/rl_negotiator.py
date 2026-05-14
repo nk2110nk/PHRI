@@ -1,6 +1,8 @@
 import random
 import bisect
+import os
 import numpy as np
+import torch
 
 from negmas.sao import SAONegotiator
 from typing import Optional
@@ -9,6 +11,13 @@ from negmas.outcomes import Outcome, ResponseType
 from sao.opponent_model import *
 from envs.observer import *
 from stable_baselines3 import PPO
+try:
+    from gymnasium import spaces
+except ImportError:
+    from gym import spaces
+from policy import MiPNPolicy
+
+PADDED_TIME_LAST_OBS_LAYOUT = 'padded_time_last'
 
 
 class RLNegotiator(SAONegotiator):
@@ -40,15 +49,99 @@ class RLNegotiator(SAONegotiator):
 
 
 class TestRLNegotiator(RLNegotiator):
-    def __init__(self, domain, path, deterministic=True, mode='issue', **kwargs):
+    def __init__(self, domain, path, deterministic=True, mode='issue', opponents=None, **kwargs):
         super().__init__(**kwargs)
-        self.model = PPO.load(path)
+        self.is_scratch_model = self._is_scratch_checkpoint(path)
         self.mode = mode    # issue, venas
         self.deterministic = deterministic
-        self.observer = OnehotObserve2nT(domain, 4)
+        self.opponents = opponents or []
+        self.observer = OnehotObserve2nT(domain, 6)
         self.domain = domain
         self.actions = None
         self.states = None
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        if self.is_scratch_model:
+            self.model, self.obs_dim, self.action_nvec, self.obs_layout = self._load_scratch_model(path)
+        else:
+            self.model = PPO.load(path)
+            self.obs_dim = None
+            self.action_nvec = None
+            self.obs_layout = None
+
+    @staticmethod
+    def _is_scratch_checkpoint(path):
+        if os.path.isdir(path):
+            path = os.path.join(path, "checkpoint.pt")
+        return str(path).endswith(".pt")
+
+    def _load_scratch_model(self, path):
+        if os.path.isdir(path):
+            path = os.path.join(path, "checkpoint.pt")
+        checkpoint = torch.load(path, map_location=self.device)
+        obs_shape = tuple(checkpoint["obs_space_shape"])
+        action_nvec = np.asarray(checkpoint["action_nvec"], dtype=np.int64)
+        obs_layout = checkpoint.get("obs_layout", "legacy")
+        model = MiPNPolicy(
+            observation_space=spaces.Box(low=0., high=1., shape=obs_shape, dtype=np.float32),
+            action_space=spaces.MultiDiscrete(action_nvec),
+            net_arch={"pi": [64, 64], "vf": [64, 64]},
+            features_dim=64,
+        )
+        model.load_state_dict(checkpoint["model"])
+        model.to(self.device)
+        model.device = self.device
+        model.eval()
+        return model, obs_shape[0], action_nvec, obs_layout
+
+    def _observe(self, state):
+        observation = self.observer(None, self.opponents) if state is None else self.observer(state.__dict__, self.opponents)
+        if not self.is_scratch_model:
+            return observation
+        observation = np.asarray(observation, dtype=np.float32).reshape(-1)
+        if observation.shape[0] > self.obs_dim:
+            raise ValueError(f"Observation dim {observation.shape[0]} exceeds checkpoint dim {self.obs_dim}")
+        padded = np.zeros((self.obs_dim,), dtype=np.float32)
+        if self.obs_layout == PADDED_TIME_LAST_OBS_LAYOUT:
+            raw_bid_dim = observation.shape[0] - 1
+            target_bid_dim = self.obs_dim - 1
+            if raw_bid_dim > target_bid_dim:
+                raise ValueError(f"Observation dim {observation.shape[0]} exceeds checkpoint dim {self.obs_dim}")
+            padded[:raw_bid_dim] = observation[:raw_bid_dim]
+            padded[-1] = observation[-1]
+        else:
+            padded[:observation.shape[0]] = observation
+        return padded
+
+    def _domain_action_nvec(self):
+        domain_nvec = np.asarray([len(issue.values) for issue in self.domain] + [2], dtype=np.int64)
+        if not self.is_scratch_model:
+            return domain_nvec
+        if len(domain_nvec) > len(self.action_nvec):
+            raise ValueError(
+                f"Checkpoint has {len(self.action_nvec) - 1} issue heads but domain requires {len(domain_nvec) - 1}"
+            )
+        general_nvec = np.zeros_like(self.action_nvec)
+        general_nvec[:len(domain_nvec) - 1] = domain_nvec[:-1]
+        general_nvec[-1] = domain_nvec[-1]
+        return general_nvec
+
+    def _predict_action(self, observation, is_first_offer=False):
+        if not self.is_scratch_model:
+            return self.model.predict(observation, state=self.states, deterministic=self.deterministic)
+        action_nvecs = torch.as_tensor(self._domain_action_nvec()[None, :], device=self.device, dtype=torch.long)
+        actions, self.states = self.model.predict(
+            observation[None, :],
+            state=self.states,
+            deterministic=self.deterministic,
+            is_first_offer=[is_first_offer],
+            action_nvecs=action_nvecs,
+        )
+        actions = np.asarray(actions).reshape(-1)
+        issue_count = len(self.domain)
+        compact = np.zeros(issue_count + 1, dtype=np.int64)
+        compact[:issue_count] = actions[:issue_count]
+        compact[-1] = actions[-1]
+        return compact, self.states
 
     def respond(self, state: MechanismState, offer: "Outcome") -> "ResponseType":
         # 初手AC用
@@ -59,8 +152,8 @@ class TestRLNegotiator(RLNegotiator):
         #     if self.actions == self.n_outcomes:
         #         return ResponseType.END_NEGOTIATION
 
-        observation = self.observer(state.__dict__)
-        self.actions, self.states = self.model.predict(observation, state=self.states, deterministic=self.deterministic)
+        observation = self._observe(state)
+        self.actions, self.states = self._predict_action(observation)
         if self.mode == 'issue':
             if self.actions[-1] == 0 and len(self.actions) != len(self.domain):
                 return ResponseType.ACCEPT_OFFER
@@ -74,8 +167,8 @@ class TestRLNegotiator(RLNegotiator):
 
     def propose(self, state: MechanismState) -> Optional["Outcome"]:
         if self.actions is None:
-            observation = self.observer(None)
-            self.actions, self.states = self.model.predict(observation, state=self.states, deterministic=self.deterministic)
+            observation = self._observe(None)
+            self.actions, self.states = self._predict_action(observation, is_first_offer=True)
         if self.mode == 'issue':
             if self.actions[-1] == 0 and len(self.actions) != len(self.domain):
                 return None

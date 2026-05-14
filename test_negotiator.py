@@ -40,9 +40,15 @@ def a(x):
 
 def run_session_trained(path, save_path, opponent, domain, util1, util2, util3, det, noise):
     session = MySAOMechanism(issues=domain, n_steps=80, avoid_ultimatum=False)
-    my_agent = TestRLNegotiator(domain, path, deterministic=det, mode='issue')
-    opponent0 = get_opponent(opponent[0], add_noise=noise) # 変更箇所
-    opponent1 = get_opponent(opponent[1], add_noise=noise) # 変更箇所
+    opponent0 = get_opponent(opponent[0], agent_number=0, add_noise=noise) # 変更箇所
+    opponent1 = get_opponent(opponent[1], agent_number=1, add_noise=noise) # 変更箇所
+    my_agent = TestRLNegotiator(
+        domain,
+        path,
+        deterministic=det,
+        mode='issue',
+        opponents=[opponent0.name, opponent1.name],
+    )
 
     # 本実験では先攻・後攻の想定を考慮する必要がない
     session.add(my_agent, ufun=util1)
@@ -54,7 +60,7 @@ def run_session_trained(path, save_path, opponent, domain, util1, util2, util3, 
     # 結果を描画
     if PLOT:
         my_agent.name = "Our Agent"
-        session.plot(path=save_path + path.split('/')[-1].rsplit('-', maxsplit=1)[0] + f'-d{a(det)}-n{a(noise)}.png')
+        session.plot(path=save_path + os.path.basename(path).rsplit('.', maxsplit=1)[0] + f'-d{a(det)}-n{a(noise)}.png')
         # plt.show()
         plt.clf()
         plt.close()
@@ -102,8 +108,9 @@ def test_trained(config):
     util2, _ = UtilityFunction.from_genius(f'./domain/{issue}/utility{scenario_number2+1}.xml')
     util3, _ = UtilityFunction.from_genius(f'./domain/{issue}/utility{scenario_number3+1}.xml')
 
-    for _ in range(1 if PLOT else 100):
-        results.append(run_session_trained(f'{LOAD_PATH}{issue}-{agent[0]}-{agent[1]}-v0.zip', save_path, agent, domain, util1, util2, util3, det, noise))
+    model_path = resolve_model_path(issue, agent)
+    for _ in range(1 if PLOT else EPISODES):
+        results.append(run_session_trained(model_path, save_path, agent, domain, util1, util2, util3, det, noise))
 
     if not PLOT:
         with open(f'{save_path}{issue}-{agent[0]}-{agent[1]}-d{a(det)}-n{a(noise)}.tsv', 'w') as f: # 変更箇所
@@ -111,13 +118,33 @@ def test_trained(config):
             writer.writerows(results)
 
 
-def get_opponent(opponent, add_noise=False):
+def resolve_model_path(issue, agent):
+    load_path = LOAD_PATH
+    checkpoint_path = os.path.join(load_path, "checkpoint.pt") if os.path.isdir(load_path) else load_path
+    if checkpoint_path.endswith(".pt") and os.path.exists(checkpoint_path):
+        return checkpoint_path
+    return f'{LOAD_PATH}{issue}-{agent[0]}-{agent[1]}-v0.zip'
+
+
+def build_result_path(load_path, plot, agent, issue, det, noise):
+    result_root = os.path.dirname(load_path) if load_path.endswith(".pt") else load_path
+    return os.path.join(
+        result_root,
+        'img' if plot else 'csv',
+        f'{agent[0]}-{agent[1]}',
+        issue,
+        f'det={det}_noise={noise}',
+    ) + os.sep
+
+
+def get_opponent(opponent, agent_number=None, add_noise=False):
+    suffix = "" if agent_number is None else str(agent_number)
     if opponent == 'Boulware':
-        opponent = TimeBasedNegotiator(name='Boulware', aspiration_type=10.0, add_noise=add_noise)
+        opponent = TimeBasedNegotiator(name='Boulware' + suffix, aspiration_type=10.0, add_noise=add_noise)
     elif opponent == 'Linear':
-        opponent = TimeBasedNegotiator(name='Linear', aspiration_type=1.0, add_noise=add_noise)
+        opponent = TimeBasedNegotiator(name='Linear' + suffix, aspiration_type=1.0, add_noise=add_noise)
     elif opponent == 'Conceder':
-        opponent = TimeBasedNegotiator(name='Conceder', aspiration_type=0.2, add_noise=add_noise)
+        opponent = TimeBasedNegotiator(name='Conceder' + suffix, aspiration_type=0.2, add_noise=add_noise)
     elif opponent == 'TitForTat1':
         opponent = AverageTitForTatNegotiator(name='TitForTat1', gamma=1, add_noise=add_noise)
     elif opponent == 'TitForTat2':
@@ -145,6 +172,7 @@ def main_trained():
     parser.add_argument('--scale', '-s', type=str, default='small')
     parser.add_argument('--plot', '-p', action='store_true')
     parser.add_argument('--is_first', '-if', action='store_true')
+    parser.add_argument('--episodes', '-e', type=int, default=100)
     args = parser.parse_args()
     print(args)
     
@@ -154,12 +182,16 @@ def main_trained():
     scale = args.scale
     plot = args.plot
     is_first = args.is_first
+    episodes = args.episodes
 
     global LOAD_PATH
     LOAD_PATH = model_path
 
     global PLOT
     PLOT = plot
+
+    global EPISODES
+    EPISODES = episodes
     
     if isinstance(issues, str):
         issues = [issues]
@@ -176,7 +208,7 @@ def main_trained():
             agent[1] = agents[j]
             for issue in issues:
                 for det, noise in product([False], [False]):
-                    save_path = LOAD_PATH + ('/img' if PLOT else '/csv') + f'/{agent[0]}-{agent[1]}/' + f'/{issue}/' + f'/det={det}_noise={noise}/'
+                    save_path = build_result_path(LOAD_PATH, PLOT, agent, issue, det, noise)
                     if not os.path.isdir(save_path):
                         os.makedirs(save_path)
                         

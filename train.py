@@ -14,6 +14,7 @@ from stable_baselines3.common.env_util import make_vec_env
 from stable_baselines3.common.evaluation import evaluate_policy
 from datetime import datetime # 変更箇所
 # from itertools import combinations_with_replacement # 変更箇所
+from ppo_scratch import DEFAULT_GENERAL_DOMAIN, PPO as MiPNScratchPPO
 dill.extend(True)
 
 ISSUE_NAMES = [
@@ -43,6 +44,8 @@ ENV_LIST = [
 
 
 def register_neg_env(issue, agents, env):
+    if len(agents) == 1:
+        agents = [agents[0], agents[0]]
     env_name = env[0].format(issue, agents[0], agents[1])
     register(
         id=env_name,
@@ -77,13 +80,47 @@ def run_rl(args):
     del model
 
 
-def main_issue(agents, issues):
-    save_path = SAVE_PATH + 'MiPN/'
-    os.makedirs(save_path)
+def build_save_path(issues, agents, current_time, save_path):
+    if save_path != './results/':
+        return save_path if save_path.endswith('/') else save_path + '/'
+    return "./results/{}_{}/{}-TA/".format('-'.join(issues), '-'.join(agents), current_time)
+
+
+def main_issue(
+    agents,
+    issues,
+    total_timesteps,
+    n_envs,
+    n_rollout_steps,
+    random_train=False,
+    general_domain=DEFAULT_GENERAL_DOMAIN,
+):
+    save_path = SAVE_PATH + 'MiPN_Negotiator/'
+    os.makedirs(save_path, exist_ok=True)
     with open(save_path + "result.csv", "w") as f:
-        f.write("domain,opponent,mean,std\n")
-    
-    run_rl((issues[0], agents, ENV_LIST[0], save_path)) # ここはexpertならいいけど、のちに変更必須
+        f.write("domain,opponents,general_domain,total_timesteps,n_envs,n_rollout_steps,checkpoint\n")
+
+    model = MiPNScratchPPO(
+        issue=issues,
+        agents=agents,
+        n_envs=n_envs,
+        n_rollout_steps=n_rollout_steps,
+        device="auto",
+        random_train=random_train,
+        general_domain=general_domain,
+    )
+    model.train(total_timesteps=total_timesteps, save_path=save_path)
+
+    with open(save_path + "result.csv", "a") as f:
+        f.write("{},{},{},{},{},{},{}\n".format(
+            "-".join(issues),
+            "-".join(agents),
+            general_domain,
+            total_timesteps,
+            n_envs,
+            n_rollout_steps,
+            save_path + "checkpoint.pt",
+        ))
 
     # p = Pool(len(agents))
     # pairs = list(combinations_with_replacement(agents, 2)) # 変更箇所
@@ -117,20 +154,38 @@ def main():
     parser.add_argument('--agents', '-a', required=True, nargs='*', type=str)
     parser.add_argument('--issue', '-i', required=True, nargs='*', type=str)
     parser.add_argument('--save_path', '-sp', type=str, default="./results/")
+    parser.add_argument('--timesteps', '-t', type=int, default=500000)
+    parser.add_argument('--n_envs', '-n', type=int, default=4)
+    parser.add_argument('--n_rollout_steps', '-rs', type=int, default=2048)
+    parser.add_argument('--skip_venas', action='store_true')
+    parser.add_argument('--random_train', action='store_true')
+    parser.add_argument('--general_domain', '-gd', type=str, default=DEFAULT_GENERAL_DOMAIN)
     args = parser.parse_args()
     agents = args.agents
     issue = args.issue
     save_path = args.save_path
+    total_timesteps = args.timesteps
+    n_envs = args.n_envs
+    n_rollout_steps = args.n_rollout_steps
+    random_train = args.random_train
+    general_domain = args.general_domain
     #print(args)
     
     global SAVE_PATH
-    SAVE_PATH = "./results/{}_{}/{}-TA/".format('-'.join(issue), '-'.join(agents), current_time) if save_path == './results/' else save_path # 時間あり
-    # SAVE_PATH = "./results/{}_{}/".format('-'.join(issue), '-'.join(agents)) if save_path == './results/' else save_path # 時間なし
+    SAVE_PATH = build_save_path(issue, agents, current_time, save_path)
     
-    main_issue(agents, issue) # MiPN
-    main_aop(agents, issue) # VeNAS
+    main_issue(
+        agents,
+        issue,
+        total_timesteps,
+        n_envs,
+        n_rollout_steps,
+        random_train=random_train,
+        general_domain=general_domain,
+    ) # MiPN_Negotiator
+    if not args.skip_venas:
+        main_aop(agents, issue) # VeNAS
 
 
 if __name__ == '__main__':
     main()
-
