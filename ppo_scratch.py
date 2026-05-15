@@ -442,7 +442,13 @@ class PPO():
                     
                 # 総当たり方式
                 else:
-                    pairs = list(itertools.combinations_with_replacement(range(len(self.agents)), 2)) # 変更箇所
+                    # 対戦相手が違う場合でexpertの場合
+                    if len(self.agents) == 2:
+                        pairs = list(itertools.combinations(range(len(self.agents)), 2)) # 変更箇所
+                    
+                    else:
+                        pairs = list(itertools.combinations_with_replacement(range(len(self.agents)), 2)) # 変更箇所
+                    # pairs = list(itertools.combinations_with_replacement(range(len(self.agents)), 2)) # 変更箇所
                     agent_id = pairs[iteration%len(pairs)]  # 変更箇所
                     self.env = self.env_list[iteration%len(self.issue)]
                     self.rollout_buffer = self.rollout_buffer_list[iteration%len(self.issue)]
