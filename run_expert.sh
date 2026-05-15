@@ -58,30 +58,30 @@ for agents in "${expert_agent_sets[@]}"; do
   done
 done
 
-# 2. General model
-general_issues=(
-  Laptop
-  ItexvsCypress
-  IS_BT_Acquisition
-  Grocery
-  thompson
-  Car
-  EnergySmall_A
-)
+# # 2. General model
+# general_issues=(
+#   Laptop
+#   ItexvsCypress
+#   IS_BT_Acquisition
+#   Grocery
+#   thompson
+#   Car
+#   EnergySmall_A
+# )
 
-general_agents=(
-  Boulware
-  Conceder
-  Linear
-  Atlas3
-)
+# general_agents=(
+#   Boulware
+#   Conceder
+#   Linear
+#   Atlas3
+# )
 
-echo "Running general: -a ${general_agents[*]} -i ${general_issues[*]} -t $TIMESTEPS -n $N_ENVS -gd $GENERAL_DOMAIN"
-run_train \
-  -a "${general_agents[@]}" \
-  -i "${general_issues[@]}" \
-  --skip_venas \
-  -t "$TIMESTEPS" \
-  -n "$N_ENVS" \
-  -rs "$N_ROLLOUT_STEPS" \
-  -gd "$GENERAL_DOMAIN"
+# echo "Running general: -a ${general_agents[*]} -i ${general_issues[*]} -t $TIMESTEPS -n $N_ENVS -gd $GENERAL_DOMAIN"
+# run_train \
+#   -a "${general_agents[@]}" \
+#   -i "${general_issues[@]}" \
+#   --skip_venas \
+#   -t "$TIMESTEPS" \
+#   -n "$N_ENVS" \
+#   -rs "$N_ROLLOUT_STEPS" \
+#   -gd "$GENERAL_DOMAIN"
