@@ -22,6 +22,10 @@ run_train() {
 
 # 1. Expert models
 expert_issues=(
+  Laptop
+  ItexvsCypress
+  IS_BT_Acquisition
+  Grocery
   thompson
   Car
   EnergySmall_A
