@@ -5,7 +5,7 @@ set -euo pipefail
 # Run from the repository root even if this script is called from elsewhere.
 cd "$(dirname "$0")"
 
-TIMESTEPS="${TIMESTEPS:-500000}"
+TIMESTEPS="${TIMESTEPS:-300000}"
 N_ENVS="${N_ENVS:-4}"
 N_ROLLOUT_STEPS="${N_ROLLOUT_STEPS:-2048}"
 GENERAL_DOMAIN="${GENERAL_DOMAIN:-EnergySmall_A}"
