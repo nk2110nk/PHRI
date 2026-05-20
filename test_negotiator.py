@@ -101,9 +101,9 @@ def test_trained(config):
     # ドメイン設定
     domain, _ = Issue.from_genius('./domain/' + issue + '/domain.xml')
     # !!!ここさえ変更すればOK!!!
-    scenario_number1 = 0
-    scenario_number2 = 1
-    scenario_number3 = 2
+    scenario_number1 = 1
+    scenario_number2 = 2
+    scenario_number3 = 0
     util1, _ = UtilityFunction.from_genius(f'./domain/{issue}/utility{scenario_number1+1}.xml')
     util2, _ = UtilityFunction.from_genius(f'./domain/{issue}/utility{scenario_number2+1}.xml')
     util3, _ = UtilityFunction.from_genius(f'./domain/{issue}/utility{scenario_number3+1}.xml')
@@ -201,18 +201,39 @@ def main_trained():
     p = Pool(len(agents))
     agent = [None, None] # 変更箇所
             
-# 変更箇所
-    for i in range(len(agents)):
-        agent[0] = agents[i]
-        for j in range(i, len(agents)):
-            agent[1] = agents[j]
-            for issue in issues:
-                for det, noise in product([False], [False]):
-                    save_path = build_result_path(LOAD_PATH, PLOT, agent, issue, det, noise)
-                    if not os.path.isdir(save_path):
-                        os.makedirs(save_path)
+# # general用
+#     for i in range(len(agents)):
+#         agent[0] = agents[i]
+#         for j in range(i, len(agents)):
+#             agent[1] = agents[j]
+#             for issue in issues:
+#                 for det, noise in product([False], [False]):
+#                     save_path = build_result_path(LOAD_PATH, PLOT, agent, issue, det, noise)
+#                     if not os.path.isdir(save_path):
+#                         os.makedirs(save_path)
                         
-                    p.map(test_trained, [(issue, agent, det, noise, save_path)])
+#                     p.map(test_trained, [(issue, agent, det, noise, save_path)])
+                    
+# expert用
+    # ペア決定
+    if len(agents) == 2:
+        pairs = [(agents[0], agents[1])]
+    else:
+        raise ValueError("agentsは2にして")
+
+    for a0, a1 in pairs:
+        for issue in issues:
+            for det, noise in product([False], [False]):
+                save_path = (
+                    LOAD_PATH
+                    + ('/img' if PLOT else '/csv')
+                    + f'/{a0}-{a1}/{issue}/det={det}_noise={noise}/'
+                )
+
+                if not os.path.isdir(save_path):
+                    os.makedirs(save_path)
+
+                p.map(test_trained, [(issue, [a0, a1], det, noise, save_path)])                
 
 
 if __name__ == '__main__':
