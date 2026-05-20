@@ -200,40 +200,38 @@ def main_trained():
 
     p = Pool(len(agents))
     agent = [None, None] # 変更箇所
-            
-# # general用
-#     for i in range(len(agents)):
-#         agent[0] = agents[i]
-#         for j in range(i, len(agents)):
-#             agent[1] = agents[j]
-#             for issue in issues:
-#                 for det, noise in product([False], [False]):
-#                     save_path = build_result_path(LOAD_PATH, PLOT, agent, issue, det, noise)
-#                     if not os.path.isdir(save_path):
-#                         os.makedirs(save_path)
-                        
-#                     p.map(test_trained, [(issue, agent, det, noise, save_path)])
-                    
-# expert用
-    # ペア決定
+        
+    # expert用    
     if len(agents) == 2:
-        pairs = [(agents[0], agents[1])]
+        pairs = [(agents[0], agents[1])]        
+        for a0, a1 in pairs:
+            for issue in issues:
+                for det, noise in product([False], [False]):
+                    save_path = (
+                        LOAD_PATH
+                        + ('/img' if PLOT else '/csv')
+                        + f'/{a0}-{a1}/{issue}/det={det}_noise={noise}/'
+                    )
+
+                    if not os.path.isdir(save_path):
+                        os.makedirs(save_path)
+
+                    p.map(test_trained, [(issue, [a0, a1], det, noise, save_path)]) 
+                        
+# general用
     else:
-        raise ValueError("agentsは2にして")
-
-    for a0, a1 in pairs:
-        for issue in issues:
-            for det, noise in product([False], [False]):
-                save_path = (
-                    LOAD_PATH
-                    + ('/img' if PLOT else '/csv')
-                    + f'/{a0}-{a1}/{issue}/det={det}_noise={noise}/'
-                )
-
-                if not os.path.isdir(save_path):
-                    os.makedirs(save_path)
-
-                p.map(test_trained, [(issue, [a0, a1], det, noise, save_path)])                
+        for i in range(len(agents)):
+            agent[0] = agents[i]
+            for j in range(i, len(agents)):
+                agent[1] = agents[j]
+                for issue in issues:
+                    for det, noise in product([False], [False]):
+                        save_path = build_result_path(LOAD_PATH, PLOT, agent, issue, det, noise)
+                        if not os.path.isdir(save_path):
+                            os.makedirs(save_path)
+                            
+                        p.map(test_trained, [(issue, agent, det, noise, save_path)])
+           
 
 
 if __name__ == '__main__':
