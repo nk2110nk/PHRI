@@ -32,15 +32,15 @@ expert_issues=(
 )
 
 expert_agent_sets=(
-  "Boulware Linear"
-  "Conceder Linear"
-  "Boulware Atlas3"
-  "Conceder Atlas3"
-  "Linear Atlas3"
-  "Atlas3 Atlas3"
-  "Boulware Boulware"
-  "Conceder Conceder"
-  "Linear Linear"
+  # "Boulware Linear"
+  # "Conceder Linear"
+  # "Boulware Atlas3"
+  # "Conceder Atlas3"
+  # "Linear Atlas3"
+  # "Atlas3 Atlas3"
+  # "Boulware Boulware"
+  # "Conceder Conceder" 
+  # "Linear Linear" 
   "Boulware Conceder"
 )
 
