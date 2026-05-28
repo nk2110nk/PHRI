@@ -1,0 +1,15 @@
+domain,omega,series,individual_utility,agreement_rate,count
+Laptop,27,MiPN_general,0.664780,96.183333,6000
+Laptop,27,Transformer_general,0.690979,94.616667,6000
+ItexvsCypress,180,MiPN_general,0.512165,96.000000,6000
+ItexvsCypress,180,Transformer_general,0.505614,98.783333,6000
+IS_BT_Acquisition,384,MiPN_general,0.748305,95.933333,6000
+IS_BT_Acquisition,384,Transformer_general,0.796400,99.883333,6000
+Grocery,1600,MiPN_general,0.554895,94.483333,6000
+Grocery,1600,Transformer_general,0.613727,98.566667,6000
+thompson,3125,MiPN_general,0.407648,93.900000,6000
+thompson,3125,Transformer_general,0.565942,99.950000,6000
+Car,15625,MiPN_general,0.614146,89.966667,6000
+Car,15625,Transformer_general,0.624962,99.966667,6000
+EnergySmall_A,15625,MiPN_general,0.385411,82.283333,6000
+EnergySmall_A,15625,Transformer_general,0.421196,99.900000,6000
