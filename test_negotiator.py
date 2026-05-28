@@ -6,10 +6,9 @@ from itertools import product
 import csv
 
 import sao
-from negmas import UtilityFunction, Issue
-from negmas import load_genius_domain_from_folder # 変更箇所
 from sao.my_sao import MySAOMechanism
 from sao.my_negotiators import *
+from envs.domain_loader import load_genius_domain
 from envs.rl_negotiator import TestRLNegotiator
 from matplotlib import pyplot as plt
 
@@ -98,15 +97,16 @@ def test_trained(config):
     
     results = [['my_util', 'opp_util1', 'opp_util2', 'social', 'nash', 'agreement', 'step']] # 変更箇所
 
-    # ドメイン設定
-    domain, _ = Issue.from_genius('./domain/' + issue + '/domain.xml')
     # !!!ここさえ変更すればOK!!!
-    scenario_number1 = 1
-    scenario_number2 = 2
+    scenario_number1 = 2
+    scenario_number2 = 1
     scenario_number3 = 0
-    util1, _ = UtilityFunction.from_genius(f'./domain/{issue}/utility{scenario_number1+1}.xml')
-    util2, _ = UtilityFunction.from_genius(f'./domain/{issue}/utility{scenario_number2+1}.xml')
-    util3, _ = UtilityFunction.from_genius(f'./domain/{issue}/utility{scenario_number3+1}.xml')
+    # ドメイン設定
+    domain, utilities = load_genius_domain(
+        issue,
+        (scenario_number1, scenario_number2, scenario_number3),
+    )
+    util1, util2, util3 = utilities
 
     model_path = resolve_model_path(issue, agent)
     for _ in range(1 if PLOT else EPISODES):

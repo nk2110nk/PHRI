@@ -1,10 +1,9 @@
 import io
 import sys
 
-from negmas import UtilityFunction, Issue
-
 from .rl_negotiator import *
 from .observer import *
+from .domain_loader import load_genius_domain
 from sao.my_sao import MySAOMechanism
 from sao.my_negotiators import *
 
@@ -19,14 +18,15 @@ class NaiveEnv(gym.Env):
         self.test = test
         
         # ドメイン設定
-        self.domain, _ = Issue.from_genius('./domain/' + domain + '/domain.xml')
         # !!!ここさえ変更すればOK!!!
-        scenario_number1 = 0
+        scenario_number1 = 2
         scenario_number2 = 1
-        scenario_number3 = 2
-        self.util1, _ = UtilityFunction.from_genius(f'./domain/{domain}/utility{scenario_number1+1}.xml')
-        self.util2, _ = UtilityFunction.from_genius(f'./domain/{domain}/utility{scenario_number2+1}.xml')
-        self.util3, _ = UtilityFunction.from_genius(f'./domain/{domain}/utility{scenario_number3+1}.xml')
+        scenario_number3 = 0
+        self.domain, utilities = load_genius_domain(
+            domain,
+            (scenario_number1, scenario_number2, scenario_number3),
+        )
+        self.util1, self.util2, self.util3 = utilities
 
         self.my_agent: Optional[RLNegotiator] = None
         self.session: Optional[MySAOMechanism] = None

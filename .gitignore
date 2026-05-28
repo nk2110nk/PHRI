@@ -1,0 +1,25 @@
+# vscode local settings (machine dependent)
+.vscode/settings.json
+
+# python cache
+__pycache__/
+*.pyc
+
+# experiment outputs
+results*
+results_past/
+results_case2/
+results_case3/
+results_case4/
+results_case5/
+results_case6/
+run_all.sh
+data*/
+
+# optional but recommended
+.DS_Store
+*.log
+*.pth
+*.pt
+*.ckpt
+wandb/
