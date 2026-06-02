@@ -1,0 +1,101 @@
+my_util	opp_util1	opp_util2	social	nash	agreement	step	last_neg	value
+0.524036551450139	0.6141207092890841	0.783695398271432	1.9218526590106553	0.252210184311547	{'Maker': 'Nikon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'National Geographic', 'Accessory': 'Electronic Flash'}	66	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	78	RLAgent
+0.4811283273738577	0.5667805433544818	0.7012380284980146	1.7491468992263541	0.19122352552819172	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	75	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	69	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.4811283273738577	0.5667805433544818	0.7012380284980146	1.7491468992263541	0.19122352552819172	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	78	RLAgent
+0	0	0	0	0		80	RLAgent
+0.4811283273738577	0.5667805433544818	0.7012380284980146	1.7491468992263541	0.19122352552819172	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	75	RLAgent
+0.49702026221692497	0.48983243858792913	0.4648446624620416	1.4516973632668957	0.1131695229310823	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Electronic Flash'}	75	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7653290954840419	0.6004555067512609	0.657323055360897	2.0231076575961997	0.30207022671970046	{'Maker': 'Canon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Tamrac', 'Accessory': 'Memory'}	69	RLAgent
+0.7653290954840419	0.6004555067512609	0.657323055360897	2.0231076575961997	0.30207022671970046	{'Maker': 'Canon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Tamrac', 'Accessory': 'Memory'}	69	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.4811283273738577	0.5667805433544818	0.7012380284980146	1.7491468992263541	0.19122352552819172	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	69	RLAgent
+0.3921334922526818	0.7920937042459737	0.7274001401541695	1.911627336652825	0.2259351901289105	{'Maker': 'Canon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Lowepro', 'Accessory': 'Battery Grip'}	69	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	75	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	69	RLAgent
+0.5478744537147398	0.500569383439076	0.45690259285213736	1.5053464300059531	0.12530516028640584	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'National Geographic', 'Accessory': 'Electronic Flash'}	75	RLAgent
+0	0	0	0	0		80	RLAgent
+0.4811283273738577	0.5667805433544818	0.7012380284980146	1.7491468992263541	0.19122352552819172	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	72	RLAgent
+0.4811283273738577	0.5667805433544818	0.7012380284980146	1.7491468992263541	0.19122352552819172	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	72	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	72	RLAgent
+0	0	0	0	0		80	RLAgent
+0.3623361144219309	0.5483975923214577	0.469049287549638	1.3797829942930266	0.09320208819020769	{'Maker': 'Canon', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Induro', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	78	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	75	RLAgent
+0	0	0	0	0		80	RLAgent
+0.5478744537147398	0.500569383439076	0.45690259285213736	1.5053464300059531	0.12530516028640584	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'National Geographic', 'Accessory': 'Electronic Flash'}	75	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	75	RLAgent
+0.47463912064627206	0.7597201887099398	0.3237561317449194	1.5581154411011313	0.11674416966055054	{'Maker': 'Canon', 'Body': 'Micro Four Thirds', 'Lens': 'Middle range model', 'Tripod': 'GITZO', 'Bag': 'Tamrac', 'Accessory': 'Battery Grip'}	75	RLAgent
+0.4987418884915905	0.5475841874084919	0.6407381452931559	1.6870642211932383	0.17498761973195937	{'Maker': 'Canon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'Induro', 'Bag': 'Lowepro', 'Accessory': 'Memory'}	75	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	72	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37981724274930473	0.6616235562062794	0.6152768044849335	1.6567176034405175	0.1546166213060933	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Lowepro', 'Accessory': 'Strap'}	72	RLAgent
+0.4811283273738577	0.5667805433544818	0.7012380284980146	1.7491468992263541	0.19122352552819172	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	69	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	69	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	75	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.4811283273738577	0.5667805433544818	0.7012380284980146	1.7491468992263541	0.19122352552819172	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	69	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	72	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.4811283273738577	0.5667805433544818	0.7012380284980146	1.7491468992263541	0.19122352552819172	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	78	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	72	RLAgent
+0	0	0	0	0		80	RLAgent
+0.4811283273738577	0.5667805433544818	0.7012380284980146	1.7491468992263541	0.19122352552819172	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	75	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	69	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	69	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	69	RLAgent
+0	0	0	0	0		80	RLAgent
+0.41372003708118127	0.4937367821701643	0.49521139920579305	1.4026682184571386	0.10115623817680473	{'Maker': 'Panasonic', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Electronic Flash'}	78	RLAgent
+0.4811283273738577	0.5667805433544818	0.7012380284980146	1.7491468992263541	0.19122352552819172	{'Maker': 'Nikon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Strap'}	75	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	78	RLAgent
+0.46205800556217713	0.6214413535057751	0.6152768044849335	1.6987761635528857	0.17667178289069396	{'Maker': 'Canon', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Tamrac', 'Accessory': 'Strap'}	72	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	78	RLAgent
+0.540060919083565	0.6913941760208231	0.5816398037841627	1.8130948988885507	0.21718137949908117	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Lowepro', 'Accessory': 'Memory'}	72	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.5305257581777248	0.5804457458923051	0.350385423966363	1.461356928036393	0.1078981848004731	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'Middle range model', 'Tripod': 'GITZO', 'Bag': 'Lowepro', 'Accessory': 'Memory'}	78	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	69	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	69	RLAgent
+0.47463912064627206	0.7597201887099398	0.3237561317449194	1.5581154411011313	0.11674416966055054	{'Maker': 'Canon', 'Body': 'Micro Four Thirds', 'Lens': 'Middle range model', 'Tripod': 'GITZO', 'Bag': 'Tamrac', 'Accessory': 'Battery Grip'}	75	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.6445503906767316	0.5877663901089962	0.7794907731838356	2.0118075539695637	0.29530622590782085	{'Maker': 'Nikon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'National Geographic', 'Accessory': 'Memory'}	75	RLAgent
+0.3179711296517017	0.703269887750122	0.6148096239196451	1.6360506413214688	0.13748343339679434	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	72	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	78	RLAgent
+0	0	0	0	0		80	RLAgent
+0.37465236392530793	0.5986660159427364	0.6316281242700303	1.6049465041380746	0.1416689066465704	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	75	RLAgent

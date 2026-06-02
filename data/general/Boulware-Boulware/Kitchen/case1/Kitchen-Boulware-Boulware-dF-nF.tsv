@@ -1,0 +1,101 @@
+my_util	opp_util1	opp_util2	social	nash	agreement	step
+0.8475726923077462	0.8849367525268104	0.5199999999999999	2.2525094448345566	0.3900250774478356	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Marble', 'Lighting spots': '10', 'Equipment': 'Coffee machine'}	78
+0.8764092793605652	0.806185950506688	0.48919999999999997	2.171795229867253	0.34564369639961623	{'Stoves': 'Ceramic', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Limestone', 'Lighting spots': '5', 'Equipment': 'Dishwasher'}	78
+0	0	0	0	0		80
+0.8915992637807207	0.762616100720971	0.5032	2.157415364501692	0.3421498104277113	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Marble', 'Lighting spots': '3', 'Equipment': 'Dishwasher'}	78
+0.9156947950068345	0.7804168410675714	0.6103999999999999	2.3065116360744056	0.4362062694294836	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Dishwasher'}	78
+0.898138989767902	0.7960469382257829	0.49319999999999997	2.187385927993685	0.35261866306120765	{'Stoves': 'Induction', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Acrylic', 'Lighting spots': '10', 'Equipment': 'Microwave'}	78
+0.886454074012913	0.4470692901485559	0.5486	1.882123364161469	0.21741368753897108	{'Stoves': 'Ceramic', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Granite', 'Lighting spots': '15', 'Equipment': 'Dishwasher'}	78
+0.8440004567428174	0.5076716913132684	0.4910000000000001	1.842672148056086	0.21038129341780445	{'Stoves': 'Induction', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Acrylic', 'Lighting spots': '15', 'Equipment': 'Coffee machine'}	78
+0.8675373384749581	0.7777848520431228	0.6212	2.2665221905180806	0.4191592971580676	{'Stoves': 'Induction', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.8375130909329889	0.6136064835626202	0.5442	1.9953195744956091	0.27966626438232145	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Acrylic', 'Lighting spots': '20', 'Equipment': 'Water Boiler'}	78
+0.8673481282268038	0.8719088580232501	0.7472	2.486456986250054	0.5650688911483527	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	75
+0.8673481282268038	0.8719088580232501	0.7472	2.486456986250054	0.5650688911483527	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0	0	0	0	0		80
+0.87604514934788	0.893296416256026	0.6656	2.434941565603906	0.5208772557354071	{'Stoves': 'Gas', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Granite', 'Lighting spots': '3', 'Equipment': 'Water Boiler'}	78
+0.8301459370941087	0.8935238293455152	0.5896	2.313269766439624	0.43733885213983886	{'Stoves': 'Electrical', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Microwave'}	78
+0	0	0	0	0		80
+0.8697551822008169	0.6004358757803461	0.6122000000000001	2.0823910579811633	0.319710561740924	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.7913362340370712	0.8172242521270675	0.48079999999999995	2.089360486164139	0.31093295710979146	{'Stoves': 'Electrical', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Acrylic', 'Lighting spots': '20', 'Equipment': 'Dishwasher'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.9169212765846456	0.8679381720760875	0.6576000000000001	2.442459448660733	0.5233384503019552	{'Stoves': 'Gas', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Granite', 'Lighting spots': '3', 'Equipment': 'Microwave'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.8783892181697545	0.5882482393826818	0.5362	2.0028374575524364	0.27706039052167963	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Acrylic', 'Lighting spots': '20', 'Equipment': 'Microwave'}	78
+0.8338406924133925	0.9083000643600402	0.6239999999999999	2.366140756773433	0.47260359406110536	{'Stoves': 'Gas', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Water Boiler'}	78
+0.8697551822008169	0.6004358757803461	0.6122000000000001	2.0823910579811633	0.319710561740924	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8324570736134549	0.6154598924781796	0.48740000000000006	1.9353169660916345	0.24971643685258116	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8346841725432979	0.8252547135155537	0.5468	2.2067388860588517	0.37665062967590024	{'Stoves': 'Induction', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.9137990987453988	0.9132006897771499	0.6736	2.500599788522549	0.5621070531679154	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Microwave'}	75
+0.8638660071607072	0.6229719008270962	0.5402	2.027037907987803	0.2907163270617508	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8286057872550336	0.941914744542431	0.6008	2.3713205317974646	0.46890998586396593	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8379220714545532	0.6243317223401457	0.545	2.007253793794699	0.28511202488163395	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Acrylic', 'Lighting spots': '15', 'Equipment': 'Coffee machine'}	78
+0	0	0	0	0		80
+0.9144219822115335	0.5964448212393645	0.6058	2.1166668034508977	0.3304046865136636	{'Stoves': 'Gas', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Microwave'}	78
+0.9111962597506462	0.6211605976713863	0.5882	2.1205568574220326	0.3329207372646147	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Oven'}	78
+0.8312547506005545	0.9503704362183744	0.6288	2.410425186818929	0.4967519622322882	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Acrylic', 'Lighting spots': '20', 'Equipment': 'Water Boiler'}	75
+0.9113920447713855	0.9235097903686526	0.6448	2.479701835140038	0.5427149262605174	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Microwave'}	78
+0.8730276187763808	0.9594099559817444	0.5816	2.414037574758125	0.4871431520175167	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Limestone', 'Lighting spots': '5', 'Equipment': 'Coffee machine'}	78
+0.8312547506005545	0.9503704362183744	0.6288	2.410425186818929	0.4967519622322882	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Acrylic', 'Lighting spots': '20', 'Equipment': 'Water Boiler'}	78
+0.8576076668282728	0.9597358534828504	0.6248	2.4421435203111233	0.5142584009328274	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8802563789331508	0.8610410390889908	0.7751999999999999	2.5164974180221416	0.5875526594389534	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Water Boiler'}	78
+0.8802563789331508	0.8610410390889908	0.7751999999999999	2.5164974180221416	0.5875526594389534	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Water Boiler'}	78
+0.8614589531866941	0.89444488307	0.6752	2.4311038362566944	0.5202602035510877	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	75
+0	0	0	0	0		80
+0.9173727404616735	0.7901361931878564	0.5728	2.28030893364953	0.41519373911680946	{'Stoves': 'Gas', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Granite', 'Lighting spots': '3', 'Equipment': 'Dishwasher'}	78
+0.8862414515565675	0.5792338293639817	0.5074000000000001	1.9728752809205492	0.2604692384830761	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Microwave'}	78
+0.8783892181697545	0.5882482393826818	0.5362	2.0028374575524364	0.27706039052167963	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Acrylic', 'Lighting spots': '20', 'Equipment': 'Microwave'}	78
+0.8108832700993776	0.6247304860790659	0.5633999999999999	1.9990137561784433	0.285409143608478	{'Stoves': 'Electrical', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Granite', 'Lighting spots': '15', 'Equipment': 'Water Boiler'}	78
+0.8523413752542979	0.9266798916432162	0.6488	2.427821266897514	0.5124531314854773	{'Stoves': 'Gas', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	75
+0.8673481282268038	0.8719088580232501	0.7472	2.486456986250054	0.5650688911483527	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8600147208022861	0.9494267528913476	0.6536	2.4630414736936337	0.533678115018264	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.9562797855643761	0.8379009280040443	0.9491999999999999	2.74338071356842	0.7605633195922994	{'Stoves': 'Hybrid', 'Refrigerator': 'French-door', 'Cabinets': 'Cherry', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Oven'}	75
+0	0	0	0	0		80
+0.8029021992338956	0.9858308604230728	0.5468	2.335533059656968	0.4328062887975805	{'Stoves': 'Ceramic', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0	0	0	0	0		80
+0.8822703347371901	0.6309763250449572	0.6781999999999999	2.191446659782147	0.37754830653757077	{'Stoves': 'Gas', 'Refrigerator': 'Side-by-side', 'Cabinets': 'Mahogany', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	75
+0	0	0	0	0		80
+0.8609098328501994	0.8239761642730572	0.5456000000000001	2.2304859971232567	0.3870318256211062	{'Stoves': 'Induction', 'Refrigerator': 'Traditional', 'Cabinets': 'Pine', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8905442017920165	0.4361408800629005	0.47300000000000003	1.799685081854917	0.18371449219082064	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Dishwasher'}	78
+0.8175333389745729	0.955660211997768	0.4748	2.2479935509723408	0.3709536831020417	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Pine', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0	0	0	0	0		80
+0.8286057872550336	0.941914744542431	0.6008	2.3713205317974646	0.46890998586396593	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8300500196394416	0.8869328747210834	0.6224	2.339382894360525	0.45821003981047764	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8324570736134549	0.6154598924781796	0.48740000000000006	1.9353169660916345	0.24971643685258116	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8590367106296852	0.9290508034138986	0.5264	2.3144875140435834	0.42011391598522596	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Marble', 'Lighting spots': '10', 'Equipment': 'Water Boiler'}	78
+0.8756064241308319	0.7774759505571961	0.6452	2.298282374688028	0.43922824689762635	{'Stoves': 'Induction', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Acrylic', 'Lighting spots': '20', 'Equipment': 'Oven'}	78
+0.8788121465487428	0.9160229089103383	0.7536	2.5484350554590813	0.6066570875624109	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Water Boiler'}	75
+0.879373195896477	0.9503082792181523	0.4532	2.282881475114629	0.3787281948737921	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Pine', 'Countertops': 'Limestone', 'Lighting spots': '10', 'Equipment': 'Water Boiler'}	78
+0.9195460813652557	0.7151258706547211	0.6607999999999999	2.2954719520199767	0.43453625970232196	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Dishwasher'}	78
+0.8697551822008169	0.6004358757803461	0.6122000000000001	2.0823910579811633	0.319710561740924	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0	0	0	0	0		80
+0.8543792639359864	0.9694348370093164	0.6704	2.4942141009453027	0.5552688710691993	{'Stoves': 'Gas', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	75
+0	0	0	0	0		80
+0.7489733910604341	0.98609158379411	0.5528000000000001	2.287864974854544	0.4082739543764851	{'Stoves': 'Electrical', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Acrylic', 'Lighting spots': '15', 'Equipment': 'Coffee machine'}	78
+0.7846577881651191	0.635740885170059	0.5065999999999999	1.926998673335178	0.25271185604474095	{'Stoves': 'Electrical', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0	0	0	0	0		80
+0.8150497146064397	0.6265308827205687	0.5342	1.9757805973270084	0.2727912691234105	{'Stoves': 'Ceramic', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8582305502944076	0.9041438665964663	0.7208	2.483174416890874	0.5593147705961067	{'Stoves': 'Gas', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8634968418683826	0.9371998284361003	0.6968	2.497496670304483	0.5638987033433405	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	75
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.8382762265365251	0.9489330323668579	0.5272	2.314409258903383	0.4193707304479231	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Acrylic', 'Lighting spots': '10', 'Equipment': 'Coffee machine'}	78
+0.8300500196394416	0.8869328747210834	0.6224	2.339382894360525	0.45821003981047764	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0	0	0	0	0		80
+0.8792859591088151	0.6226460033259904	0.497	1.9989319624348054	0.2720994924452227	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Limestone', 'Lighting spots': '5', 'Equipment': 'Coffee machine'}	78
+0	0	0	0	0		80
+0.8828526431553183	0.49544405086595944	0.5142	1.8924966940212777	0.22491318299705992	{'Stoves': 'Induction', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Water Boiler'}	78
+0.7903248718460474	0.9841934125321229	0.46399999999999997	2.2385182843781704	0.3609142951408647	{'Stoves': 'Electrical', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Limestone', 'Lighting spots': '3', 'Equipment': 'Water Boiler'}	78
+0.8324570736134549	0.6154598924781796	0.48740000000000006	1.9353169660916345	0.24971643685258116	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Marble', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.8592856122831118	0.9694552056031354	0.5872	2.415940817886247	0.4891604479095691	{'Stoves': 'Gas', 'Refrigerator': 'Traditional', 'Cabinets': 'Maple', 'Countertops': 'Granite', 'Lighting spots': '3', 'Equipment': 'Coffee machine'}	78
+0.8567863179099997	0.9591257364178138	0.6992	2.5151120543278136	0.5745786530362005	{'Stoves': 'Gas', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Granite', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	75
+0.8523413752542979	0.9266798916432162	0.6488	2.427821266897514	0.5124531314854773	{'Stoves': 'Gas', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Coffee machine'}	78
+0.888846465463176	0.7549229294952666	0.65	2.2937693949584426	0.43615687542633325	{'Stoves': 'Induction', 'Refrigerator': 'Traditional', 'Cabinets': 'Cherry', 'Countertops': 'Granite', 'Lighting spots': '5', 'Equipment': 'Coffee machine'}	75
+0.8846264912538673	0.46486871825406983	0.453	1.8024952095079372	0.18628953795461953	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Inox', 'Lighting spots': '20', 'Equipment': 'Water Boiler'}	78
+0.8850354717754318	0.4755939570315954	0.4538000000000001	1.8144294288070273	0.19101237154486417	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Mahogany', 'Countertops': 'Inox', 'Lighting spots': '15', 'Equipment': 'Coffee machine'}	78
+0	0	0	0	0		80
+0.8618505232281723	0.9523044014124253	0.5556	2.369754924640598	0.45600539230751147	{'Stoves': 'Hybrid', 'Refrigerator': 'Traditional', 'Cabinets': 'Pine', 'Countertops': 'Limestone', 'Lighting spots': '20', 'Equipment': 'Water Boiler'}	78
+0.8501041244914058	0.8249288160144477	0.5035999999999999	2.1786329405058535	0.3531622858529075	{'Stoves': 'Induction', 'Refrigerator': 'Traditional', 'Cabinets': 'Oak', 'Countertops': 'Marble', 'Lighting spots': '5', 'Equipment': 'Coffee machine'}	78

@@ -1,0 +1,101 @@
+my_util	opp_util1	opp_util2	social	nash	agreement	step	last_neg	value
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7483443708609272	0.745	0.41000000000000003	1.9033443708609274	0.22858178807947022	{'Bread type': 'Crackers', 'Fruit': 'Bananas', 'Snacks': 'Doughnuts', 'Spreads': 'Peanut butter', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	72	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	75	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.8211920529801324	0.84	0.61	2.2711920529801324	0.42077880794701983	{'Bread type': 'Baguette', 'Fruit': 'Grapes', 'Snacks': 'Doughnuts', 'Spreads': 'Peanut butter', 'Vegetables': 'Potatoes'}	72	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	75	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	78	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	78	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7218543046357617	0.785	0.5	2.0068543046357616	0.2833278145695365	{'Bread type': 'Crackers', 'Fruit': 'Bananas', 'Snacks': 'Doughnuts', 'Spreads': 'Jam', 'Vegetables': 'Spinach'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	75	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7483443708609272	0.745	0.41000000000000003	1.9033443708609274	0.22858178807947022	{'Bread type': 'Crackers', 'Fruit': 'Bananas', 'Snacks': 'Doughnuts', 'Spreads': 'Peanut butter', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.8211920529801324	0.84	0.61	2.2711920529801324	0.42077880794701983	{'Bread type': 'Baguette', 'Fruit': 'Grapes', 'Snacks': 'Doughnuts', 'Spreads': 'Peanut butter', 'Vegetables': 'Potatoes'}	60	RLAgent
+0.9072847682119207	0.68	0.365	1.9522847682119207	0.22518807947019873	{'Bread type': 'Croissants', 'Fruit': 'Bananas', 'Snacks': 'Doughnuts', 'Spreads': 'Sandwichspread', 'Vegetables': 'Leek'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7218543046357617	0.785	0.5	2.0068543046357616	0.2833278145695365	{'Bread type': 'Crackers', 'Fruit': 'Bananas', 'Snacks': 'Doughnuts', 'Spreads': 'Jam', 'Vegetables': 'Spinach'}	63	RLAgent
+0.8741721854304636	0.83	0.645	2.3491721854304637	0.4679880794701987	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Doughnuts', 'Spreads': 'Sandwichspread', 'Vegetables': 'Broccoli'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	72	RLAgent
+0.7483443708609272	0.745	0.41000000000000003	1.9033443708609274	0.22858178807947022	{'Bread type': 'Crackers', 'Fruit': 'Bananas', 'Snacks': 'Doughnuts', 'Spreads': 'Peanut butter', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.9072847682119207	0.68	0.365	1.9522847682119207	0.22518807947019873	{'Bread type': 'Croissants', 'Fruit': 'Bananas', 'Snacks': 'Doughnuts', 'Spreads': 'Sandwichspread', 'Vegetables': 'Leek'}	69	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.9072847682119207	0.68	0.365	1.9522847682119207	0.22518807947019873	{'Bread type': 'Croissants', 'Fruit': 'Bananas', 'Snacks': 'Doughnuts', 'Spreads': 'Sandwichspread', 'Vegetables': 'Leek'}	75	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	75	RLAgent
+0.794701986754967	0.79	0.67	2.254701986754967	0.420635761589404	{'Bread type': 'Baguette', 'Fruit': 'Grapes', 'Snacks': 'Doughnuts', 'Spreads': 'Peanut butter', 'Vegetables': 'Leek'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	69	RLAgent
+0	0	0	0	0		80	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	66	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	72	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent
+0.7483443708609272	0.745	0.41000000000000003	1.9033443708609274	0.22858178807947022	{'Bread type': 'Crackers', 'Fruit': 'Bananas', 'Snacks': 'Doughnuts', 'Spreads': 'Peanut butter', 'Vegetables': 'Potatoes'}	72	RLAgent
+0.7218543046357617	0.785	0.5	2.0068543046357616	0.2833278145695365	{'Bread type': 'Crackers', 'Fruit': 'Bananas', 'Snacks': 'Doughnuts', 'Spreads': 'Jam', 'Vegetables': 'Spinach'}	63	RLAgent
+0.7019867549668874	0.725	0.67	2.0969867549668875	0.3409900662251656	{'Bread type': 'Baguette', 'Fruit': 'Pears', 'Snacks': 'Popcorn', 'Spreads': 'Jam', 'Vegetables': 'Potatoes'}	63	RLAgent

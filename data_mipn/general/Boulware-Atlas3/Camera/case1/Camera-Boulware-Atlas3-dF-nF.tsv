@@ -1,0 +1,101 @@
+my_util	opp_util1	opp_util2	social	nash	agreement	step
+0.38525162337662333	0.4782714285714286	0.49314957983193275	1.3566726317799847	0.09086519903463619	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Induro', 'Bag': 'Domke', 'Accessory': 'Electronic Flash'}	78
+0.7319480519480519	0.7033714285714288	0.5086352941176471	1.9439547746371277	0.26186139357118854	{'Maker': 'Canon', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Electronic Flash'}	75
+0.28219203590527125	0.6373428571428572	0.4950823529411764	1.4146172459893047	0.08904208525126661	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Tamrac', 'Accessory': 'Strap'}	75
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.49049560733384273	0.4992714285714286	0.354053781512605	1.3438208174178763	0.08670438725230321	{'Maker': 'Nikon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'Induro', 'Bag': 'Tamrac', 'Accessory': 'Strap'}	78
+0	0	0	0	0		80
+0.5814154411764706	0.5715357142857143	0.4549579831932773	1.607909138655462	0.15118239653681326	{'Maker': 'Sony', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Artizan and Artist', 'Accessory': 'Battery Grip'}	78
+0.2609420359052712	0.7141428571428572	0.43748235294117643	1.4125672459893048	0.0815247888156637	{'Maker': 'Pentax', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Tamrac', 'Accessory': 'Strap'}	75
+0.5624921695951108	0.8440571428571428	0.3912993464052287	1.7978486588574825	0.18577935596651232	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Lowepro', 'Accessory': 'Electronic Flash'}	70
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.8800735294117648	0.48373571428571427	0.35691092436974786	1.7207201680672268	0.15194518851819608	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Tamrac', 'Accessory': 'Battery Grip'}	78
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0	0	0	0	0		80
+0.13598405271199387	0.46964285714285714	0.35218823529411764	0.9578151451489687	0.022492127989966037	{'Maker': 'Pentax', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Induro', 'Bag': 'Lowepro', 'Accessory': 'Strap'}	78
+0	0	0	0	0		80
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.28010456455309396	0.5122714285714286	0.5284436974789916	1.3208196906035141	0.07582615650706366	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Induro', 'Bag': 'Artizan and Artist', 'Accessory': 'Electronic Flash'}	78
+0	0	0	0	0		80
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0	0	0	0	0		80
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.5525262605042017	0.8074857142857144	0.33978823529411756	1.6998002100840335	0.15159892080341075	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Lowepro', 'Accessory': 'Battery Grip'}	78
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.13980548128342246	0.6146285714285714	0.365185060690943	1.119619113402937	0.031379783759354025	{'Maker': 'Panasonic', 'Body': 'compact', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Lowepro', 'Accessory': 'Strap'}	78
+0	0	0	0	0		80
+0.2326626241405653	0.7846285714285715	0.31089934640522876	1.3281905419743656	0.05675583919730497	{'Maker': 'Panasonic', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Lowepro', 'Accessory': 'Strap'}	78
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.5010136554621849	0.4779857142857143	0.34844369747899157	1.3274430672268906	0.08344438025593279	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Induro', 'Bag': 'Artizan and Artist', 'Accessory': 'Battery Grip'}	78
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.31867599312452255	0.7397714285714287	0.5727294117647058	1.631176833460657	0.1350194666830861	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Electronic Flash'}	78
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.45643382352941175	0.5184857142857143	0.5034857142857142	1.4784052521008402	0.11915211819057621	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	78
+0	0	0	0	0		80
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.28801136363636365	0.4843428571428572	0.4717210084033613	1.2440752291825823	0.06580331018692567	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	78
+0.2366626241405653	0.8160571428571429	0.4855025210084033	1.5382222880061116	0.09376521106081191	{'Maker': 'Panasonic', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Lowepro', 'Accessory': 'Strap'}	72
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.5086423319327731	0.6247857142857143	0.3963025210084033	1.5297305672268906	0.12594195411460798	{'Maker': 'Sony', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Induro', 'Bag': 'Lowepro', 'Accessory': 'Battery Grip'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.38525162337662333	0.4782714285714286	0.49314957983193275	1.3566726317799847	0.09086519903463619	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Induro', 'Bag': 'Domke', 'Accessory': 'Electronic Flash'}	78
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.31336349312452255	0.7845714285714287	0.6735294117647058	1.7714643334606572	0.1655912763323244	{'Maker': 'Sony', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Electronic Flash'}	72
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.23552473262032084	0.5527714285714286	0.6834857142857143	1.4717818754774636	0.08898392300569136	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'National Geographic', 'Accessory': 'Electronic Flash'}	78
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0	0	0	0	0		80
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0	0	0	0	0		80
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.5624921695951108	0.8440571428571428	0.3912993464052287	1.7978486588574825	0.18577935596651232	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Lowepro', 'Accessory': 'Electronic Flash'}	70
+0.49270483193277315	0.6567857142857143	0.23790252100840337	1.3873930672268908	0.07698561145616231	{'Maker': 'Pentax', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Induro', 'Bag': 'Lowepro', 'Accessory': 'Battery Grip'}	75
+0	0	0	0	0		80
+0.5624921695951108	0.8440571428571428	0.3912993464052287	1.7978486588574825	0.18577935596651232	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Lowepro', 'Accessory': 'Electronic Flash'}	70
+0	0	0	0	0		80
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.45643382352941175	0.5184857142857143	0.5034857142857142	1.4784052521008402	0.11915211819057621	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	78
+0.530625	0.5782857142857143	0.35412100840336136	1.4630317226890757	0.10866304320288116	{'Maker': 'Pentax', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	78
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.45643382352941175	0.5184857142857143	0.5034857142857142	1.4784052521008402	0.11915211819057621	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	78
+0.19580548128342243	0.6203428571428572	0.4540739495798318	1.2702222880061114	0.05515478779241321	{'Maker': 'Panasonic', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Lowepro', 'Accessory': 'Strap'}	78
+0.3076185064935065	0.7568571428571429	0.4455495798319328	1.5100252291825824	0.10373430741227453	{'Maker': 'Pentax', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	73
+0.17455548128342244	0.6971428571428572	0.3964739495798319	1.2681722880061115	0.04824695732800071	{'Maker': 'Pentax', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Lowepro', 'Accessory': 'Strap'}	75

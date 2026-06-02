@@ -1,0 +1,101 @@
+my_util	opp_util1	opp_util2	social	nash	agreement	step
+0	0	0	0	0		80
+0.4323	0.8509999999999999	0.9450000000000002	2.2283	0.34765349850000005	{'CD player': 'none', 'Extra speakers': 'meager', 'Airconditioning': 'fairly good', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'none'}	70
+0.7527	0.607	0.7478000000000001	2.1075000000000004	0.34166151942000006	{'CD player': 'meager', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.8139000000000001	0.47600000000000003	0.7036	1.9935	0.27258617904000004	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'fairly good'}	78
+0.6099	0.63	0.9226	2.1625	0.3544970562	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0.8122	0.5040000000000001	0.7196	2.0358	0.2945673964800001	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'fairly good', 'Tow hedge3': 'fairly good'}	78
+0.7799	0.55	0.7226	2.0525	0.30995565700000005	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.6215	0.725	0.7626000000000001	2.1091	0.34361802750000003	{'CD player': 'standard', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.7799	0.55	0.7226	2.0525	0.30995565700000005	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0	0	0	0	0		80
+0.7459	0.6219999999999999	0.7498000000000001	2.1177	0.34786956003999997	{'CD player': 'meager', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'standard'}	78
+0	0	0	0	0		80
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.7816000000000001	0.4795000000000001	0.7066	1.9677000000000002	0.2648175695200001	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'good', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'good'}	78
+0	0	0	0	0		80
+0.7799	0.5015000000000001	0.6866000000000001	1.9680000000000002	0.26854288901000006	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'good', 'Tow hedge': 'fairly good', 'Tow hedge2': 'meager', 'Tow hedge3': 'none'}	78
+0.6099	0.63	0.9226	2.1625	0.3544970562	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.921	0.523	0.7206	2.1646	0.34710076980000004	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'meager', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.7686000000000001	0.632	0.9146000000000001	2.3152	0.4442717059200001	{'CD player': 'standard', 'Extra speakers': 'standard', 'Airconditioning': 'none', 'Tow hedge': 'fairly good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.7816000000000001	0.527	0.7066	2.0152	0.29105080112000004	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'good'}	78
+0.8139000000000001	0.47600000000000003	0.7036	1.9935	0.27258617904000004	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'fairly good'}	78
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0.5331	0.8779999999999999	0.9887999999999999	2.3998999999999997	0.4628195078399999	{'CD player': 'meager', 'Extra speakers': 'none', 'Airconditioning': 'meager', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'meager'}	72
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0	0	0	0	0		80
+0.6684000000000001	0.5820000000000001	0.72	1.9704000000000002	0.28008633600000005	{'CD player': 'none', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'good'}	78
+0	0	0	0	0		80
+0.7799	0.55	0.7226	2.0525	0.30995565700000005	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.6456000000000001	0.528	0.7076	1.8812	0.24120442368000003	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'none'}	78
+0.4515	0.8039999999999999	0.9266000000000001	2.1821	0.3363613596	{'CD player': 'standard', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'fairly good', 'Tow hedge2': 'meager', 'Tow hedge3': 'none'}	72
+0	0	0	0	0		80
+0.8027000000000001	0.5735	0.6990000000000001	2.0752	0.32178356655000007	{'CD player': 'none', 'Extra speakers': 'fairly good', 'Airconditioning': 'fairly good', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'good'}	78
+0.7884000000000001	0.51	0.7128000000000001	2.0112	0.28660547520000007	{'CD player': 'meager', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'good'}	78
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	10
+0.8139000000000001	0.47600000000000003	0.7036	1.9935	0.27258617904000004	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'fairly good'}	78
+0	0	0	0	0		80
+0.7867000000000001	0.533	0.7288000000000001	2.0485	0.3055939296800001	{'CD player': 'meager', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'fairly good'}	78
+0.8938	0.5800000000000001	0.7458000000000001	2.2196000000000002	0.3866257032000001	{'CD player': 'meager', 'Extra speakers': 'fairly good', 'Airconditioning': 'meager', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0	0	0	0	0		80
+0.6167	0.613	0.9288000000000001	2.1585	0.35112085848	{'CD player': 'meager', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'good', 'Tow hedge3': 'fairly good'}	78
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0	0	0	0	0		80
+0.7738	0.649	0.753	2.1758	0.37815373860000007	{'CD player': 'none', 'Extra speakers': 'fairly good', 'Airconditioning': 'meager', 'Tow hedge': 'good', 'Tow hedge2': 'fairly good', 'Tow hedge3': 'meager'}	78
+0.8043000000000001	0.531	0.7356	2.0709	0.3141624754800001	{'CD player': 'standard', 'Extra speakers': 'standard', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'fairly good'}	78
+0.6099	0.63	0.9226	2.1625	0.3544970562	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.6116	0.602	0.7266	1.9402	0.26752191312	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'none'}	78
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0	0	0	0	0		80
+0.9227000000000001	0.47950000000000004	0.5478000000000001	1.9500000000000002	0.2423657012700001	{'CD player': 'meager', 'Extra speakers': 'fairly good', 'Airconditioning': 'good', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.6422	0.5840000000000001	0.9196	2.1458	0.34489119808000007	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'fairly good', 'Tow hedge3': 'fairly good'}	78
+0.8367000000000001	0.48250000000000004	0.536	1.8552000000000002	0.21638735400000006	{'CD player': 'none', 'Extra speakers': 'fairly good', 'Airconditioning': 'good', 'Tow hedge': 'good', 'Tow hedge2': 'fairly good', 'Tow hedge3': 'good'}	78
+0.4323	0.8815	0.981	2.2948	0.37383207345	{'CD player': 'none', 'Extra speakers': 'meager', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.45589999999999997	0.774	0.957	2.1869	0.33769333619999997	{'CD player': 'none', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'standard'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0.7799	0.547	0.7226	2.0495	0.30826498978000005	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'fairly good', 'Tow hedge3': 'meager'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.8139000000000001	0.47600000000000003	0.7036	1.9935	0.27258617904000004	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'fairly good'}	78
+0.7799	0.5025000000000001	0.7226	2.005	0.28318675935000004	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'good', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	13
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.8105	0.531	0.8796	2.2211	0.37855828980000006	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'fairly good', 'Tow hedge2': 'fairly good', 'Tow hedge3': 'fairly good'}	78
+0.8043000000000001	0.531	0.7356	2.0709	0.3141624754800001	{'CD player': 'standard', 'Extra speakers': 'standard', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'fairly good'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.9227000000000001	0.47950000000000004	0.5478000000000001	1.9500000000000002	0.2423657012700001	{'CD player': 'meager', 'Extra speakers': 'fairly good', 'Airconditioning': 'good', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.6099	0.63	0.9226	2.1625	0.3544970562	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.6116	0.607	0.9066	2.1252	0.33656727191999997	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'good'}	78
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	10
+0	0	0	0	0		80
+0.7867000000000001	0.533	0.7288000000000001	2.0485	0.3055939296800001	{'CD player': 'meager', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'fairly good'}	78
+0.7816000000000001	0.47450000000000003	0.5266000000000001	1.7827000000000002	0.19529972072000007	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'good', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'none'}	78
+0.7816000000000001	0.527	0.7066	2.0152	0.29105080112000004	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'good'}	78
+0.0	1.0	1.0	2.0	0.0	{'CD player': 'none', 'Extra speakers': 'none', 'Airconditioning': 'none', 'Tow hedge': 'none', 'Tow hedge2': 'none', 'Tow hedge3': 'none'}	7
+0	0	0	0	0		80
+0.921	0.523	0.7206	2.1646	0.34710076980000004	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'meager', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.8043000000000001	0.531	0.7356	2.0709	0.3141624754800001	{'CD player': 'standard', 'Extra speakers': 'standard', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'fairly good'}	78
+0.7799	0.55	0.7226	2.0525	0.30995565700000005	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0	0	0	0	0		80
+0.8299000000000001	0.49250000000000005	0.538	1.8604	0.21989445350000003	{'CD player': 'none', 'Extra speakers': 'fairly good', 'Airconditioning': 'good', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'standard'}	78
+0.7799	0.5025000000000001	0.7226	2.005	0.28318675935000004	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'good', 'Tow hedge': 'none', 'Tow hedge2': 'meager', 'Tow hedge3': 'fairly good'}	78
+0.8139000000000001	0.47600000000000003	0.7036	1.9935	0.27258617904000004	{'CD player': 'standard', 'Extra speakers': 'fairly good', 'Airconditioning': 'none', 'Tow hedge': 'good', 'Tow hedge2': 'good', 'Tow hedge3': 'fairly good'}	78

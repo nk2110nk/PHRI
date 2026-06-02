@@ -1,0 +1,101 @@
+my_util	opp_util1	opp_util2	social	nash	agreement	step
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.08	1.0	0.716	1.796	0.05728	{'Signing bonus': '10%', 'Job assignment': 'Division E', 'Moving expense coverage': '100%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	30
+0.27	0.595	0.381	1.246	0.06120765000000001	{'Signing bonus': '10%', 'Job assignment': 'Division A', 'Moving expense coverage': '60%', 'Insurance coverage': '20%', 'Salary': '$40,000'}	78
+0.625	0.71	0.7205000000000001	2.0555000000000003	0.31972187500000004	{'Signing bonus': '10%', 'Job assignment': 'Division D', 'Moving expense coverage': '90%', 'Insurance coverage': '60%', 'Salary': '$32,000'}	78
+0.08	1.0	0.716	1.796	0.05728	{'Signing bonus': '10%', 'Job assignment': 'Division E', 'Moving expense coverage': '100%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	43
+0.6125	0.5525000000000001	0.786	1.951	0.2659873125000001	{'Signing bonus': '8%', 'Job assignment': 'Division D', 'Moving expense coverage': '80%', 'Insurance coverage': '80%', 'Salary': '$32,000'}	78
+0.1	0.7650000000000001	0.6260000000000001	1.491	0.047889000000000015	{'Signing bonus': '10%', 'Job assignment': 'Division A', 'Moving expense coverage': '80%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	75
+0.34500000000000003	0.55	0.657	1.552	0.12466575000000002	{'Signing bonus': '6%', 'Job assignment': 'Division B', 'Moving expense coverage': '80%', 'Insurance coverage': '20%', 'Salary': '$40,000'}	78
+0.26	0.67	0.6205	1.5505	0.10809110000000002	{'Signing bonus': '10%', 'Job assignment': 'Division D', 'Moving expense coverage': '60%', 'Insurance coverage': '60%', 'Salary': '$40,000'}	78
+0.11	0.86	0.6890000000000001	1.659	0.06517940000000001	{'Signing bonus': '10%', 'Job assignment': 'Division E', 'Moving expense coverage': '80%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	69
+0.315	0.485	0.77	1.57	0.11763675	{'Signing bonus': '2%', 'Job assignment': 'Division D', 'Moving expense coverage': '90%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	78
+0.175	0.7550000000000001	0.7430000000000001	1.6730000000000003	0.09816887500000003	{'Signing bonus': '10%', 'Job assignment': 'Division D', 'Moving expense coverage': '70%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	78
+0.28500000000000003	0.405	0.4705000000000001	1.1605	0.054307462500000014	{'Signing bonus': '6%', 'Job assignment': 'Division A', 'Moving expense coverage': '60%', 'Insurance coverage': '60%', 'Salary': '$40,000'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.1425	0.9175	0.896	1.956	0.1171464	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '100%', 'Insurance coverage': '100%', 'Salary': '$38,000'}	75
+0.07	0.905	0.653	1.6280000000000001	0.04136755	{'Signing bonus': '10%', 'Job assignment': 'Division A', 'Moving expense coverage': '100%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.19	0.685	0.6800000000000002	1.5550000000000002	0.08850200000000003	{'Signing bonus': '10%', 'Job assignment': 'Division D', 'Moving expense coverage': '60%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	75
+0.125	0.875	0.9199999999999999	1.92	0.10062499999999999	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '90%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	75
+0.51	0.47500000000000003	0.613	1.598	0.14849925	{'Signing bonus': '6%', 'Job assignment': 'Division A', 'Moving expense coverage': '90%', 'Insurance coverage': '100%', 'Salary': '$32,000'}	78
+0.13	0.9650000000000001	0.8330000000000002	1.9280000000000004	0.10449985000000003	{'Signing bonus': '10%', 'Job assignment': 'Division D', 'Moving expense coverage': '100%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	60
+0.24000000000000002	0.65	0.6805000000000001	1.5705	0.10615800000000003	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '60%', 'Salary': '$40,000'}	75
+0.3425	0.6074999999999999	0.7005	1.6505	0.145752159375	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '60%', 'Salary': '$38,000'}	78
+0.12	0.7000000000000001	0.663	1.483	0.055692000000000005	{'Signing bonus': '10%', 'Job assignment': 'Division D', 'Moving expense coverage': '60%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.1	0.68	0.7230000000000001	1.5030000000000001	0.049164000000000006	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	75
+0	0	0	0	0		80
+0.075	0.91	0.8430000000000002	1.8280000000000003	0.057534750000000016	{'Signing bonus': '10%', 'Job assignment': 'Division D', 'Moving expense coverage': '90%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	69
+0.1275	0.7325000000000002	0.74	1.6	0.06911137500000002	{'Signing bonus': '8%', 'Job assignment': 'Division A', 'Moving expense coverage': '90%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	75
+0.48750000000000004	0.8025	0.7885000000000001	2.0785	0.308475984375	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '100%', 'Insurance coverage': '60%', 'Salary': '$34,000'}	72
+0.37750000000000006	0.6075	0.744	1.729	0.17062245000000004	{'Signing bonus': '4%', 'Job assignment': 'Division C', 'Moving expense coverage': '100%', 'Insurance coverage': '20%', 'Salary': '$40,000'}	78
+0.125	0.7900000000000001	0.6260000000000001	1.5410000000000004	0.061817500000000025	{'Signing bonus': '10%', 'Job assignment': 'Division E', 'Moving expense coverage': '70%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	78
+0.38	0.62	0.5700000000000001	1.57	0.13429200000000002	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '0%', 'Salary': '$40,000'}	75
+0.11000000000000001	0.9450000000000001	0.893	1.9480000000000002	0.09282735000000002	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '100%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	63
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.17	0.6649999999999999	0.74	1.575	0.083657	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	75
+0.19	0.53	0.6659999999999999	1.386	0.0670662	{'Signing bonus': '2%', 'Job assignment': 'Division B', 'Moving expense coverage': '100%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	78
+0.3275	0.4725	0.613	1.413	0.09485791874999999	{'Signing bonus': '6%', 'Job assignment': 'Division E', 'Moving expense coverage': '60%', 'Insurance coverage': '100%', 'Salary': '$38,000'}	78
+0.26	0.43000000000000005	0.6990000000000001	1.3890000000000002	0.07814820000000001	{'Signing bonus': '2%', 'Job assignment': 'Division D', 'Moving expense coverage': '80%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	78
+0	0	0	0	0		80
+0.46499999999999997	0.72	0.823	2.008	0.27554039999999996	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '90%', 'Insurance coverage': '100%', 'Salary': '$32,000'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.15000000000000002	0.9850000000000001	0.7330000000000001	1.8680000000000003	0.10830075000000004	{'Signing bonus': '10%', 'Job assignment': 'Division E', 'Moving expense coverage': '100%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	63
+0.4425	0.5375	0.5700000000000001	1.55	0.13557093750000002	{'Signing bonus': '8%', 'Job assignment': 'Division D', 'Moving expense coverage': '60%', 'Insurance coverage': '0%', 'Salary': '$40,000'}	78
+0	0	0	0	0		80
+0.615	0.53	0.5435	1.6885	0.17715382500000001	{'Signing bonus': '10%', 'Job assignment': 'Division B', 'Moving expense coverage': '70%', 'Insurance coverage': '60%', 'Salary': '$32,000'}	78
+0.035	0.87	0.7830000000000001	1.6880000000000002	0.023842350000000005	{'Signing bonus': '10%', 'Job assignment': 'Division B', 'Moving expense coverage': '90%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	69
+0.27	0.935	0.7140000000000002	1.9190000000000003	0.18024930000000006	{'Signing bonus': '10%', 'Job assignment': 'Division D', 'Moving expense coverage': '100%', 'Insurance coverage': '20%', 'Salary': '$40,000'}	63
+0	0	0	0	0		80
+0.06	0.9800000000000001	0.8160000000000001	1.856	0.04798080000000001	{'Signing bonus': '10%', 'Job assignment': 'Division D', 'Moving expense coverage': '100%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	72
+0.19	0.7700000000000001	0.6865000000000001	1.6465000000000003	0.10043495000000002	{'Signing bonus': '10%', 'Job assignment': 'Division B', 'Moving expense coverage': '80%', 'Insurance coverage': '60%', 'Salary': '$40,000'}	78
+0.4575	0.6875	0.764	1.909	0.24030187500000003	{'Signing bonus': '6%', 'Job assignment': 'Division D', 'Moving expense coverage': '100%', 'Insurance coverage': '20%', 'Salary': '$38,000'}	78
+0.22250000000000003	0.8275	0.8935000000000002	1.9435000000000002	0.16451010312500006	{'Signing bonus': '8%', 'Job assignment': 'Division C', 'Moving expense coverage': '100%', 'Insurance coverage': '60%', 'Salary': '$40,000'}	72
+0.35750000000000004	0.7075000000000001	0.69	1.7550000000000001	0.17452256250000003	{'Signing bonus': '8%', 'Job assignment': 'Division B', 'Moving expense coverage': '90%', 'Insurance coverage': '0%', 'Salary': '$40,000'}	78
+0.38250000000000006	0.8175	0.7230000000000001	1.9230000000000003	0.22607758125000005	{'Signing bonus': '8%', 'Job assignment': 'Division D', 'Moving expense coverage': '100%', 'Insurance coverage': '0%', 'Salary': '$40,000'}	72
+0	0	0	0	0		80
+0.5175000000000001	0.5775	0.535	1.6300000000000003	0.15988809375000004	{'Signing bonus': '10%', 'Job assignment': 'Division E', 'Moving expense coverage': '60%', 'Insurance coverage': '80%', 'Salary': '$34,000'}	78
+0.34500000000000003	0.67	0.513	1.528	0.11857995000000002	{'Signing bonus': '10%', 'Job assignment': 'Division B', 'Moving expense coverage': '70%', 'Insurance coverage': '0%', 'Salary': '$40,000'}	78
+0	0	0	0	0		80
+0.02	0.9400000000000001	0.756	1.7160000000000002	0.014212800000000001	{'Signing bonus': '10%', 'Job assignment': 'Division B', 'Moving expense coverage': '100%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	66
+0.2725	0.6224999999999999	0.76	1.655	0.12891975	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '80%', 'Salary': '$38,000'}	75
+0.30000000000000004	0.675	0.8305	1.8055	0.16817625000000003	{'Signing bonus': '6%', 'Job assignment': 'Division D', 'Moving expense coverage': '90%', 'Insurance coverage': '60%', 'Salary': '$40,000'}	78
+0.73	0.73	0.643	2.1029999999999998	0.3426547	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '100%', 'Insurance coverage': '0%', 'Salary': '$32,000'}	75
+0.17500000000000002	0.7200000000000001	0.8029999999999999	1.698	0.10117800000000002	{'Signing bonus': '6%', 'Job assignment': 'Division B', 'Moving expense coverage': '100%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	78
+0	0	0	0	0		80
+0.31000000000000005	0.635	0.621	1.566	0.12224385000000001	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '20%', 'Salary': '$40,000'}	75
+0	0	0	0	0		80
+0.21500000000000002	0.7600000000000001	0.863	1.838	0.14101420000000003	{'Signing bonus': '6%', 'Job assignment': 'Division D', 'Moving expense coverage': '100%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	72
+0.33	0.655	0.561	1.5460000000000003	0.12126015000000001	{'Signing bonus': '10%', 'Job assignment': 'Division D', 'Moving expense coverage': '60%', 'Insurance coverage': '20%', 'Salary': '$40,000'}	78
+0.34	0.58	0.33	1.25	0.06507600000000001	{'Signing bonus': '10%', 'Job assignment': 'Division A', 'Moving expense coverage': '60%', 'Insurance coverage': '0%', 'Salary': '$40,000'}	78
+0	0	0	0	0		80
+0.12000000000000001	0.665	0.813	1.5979999999999999	0.0648774	{'Signing bonus': '6%', 'Job assignment': 'Division B', 'Moving expense coverage': '90%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	75
+0	0	0	0	0		80
+0.26	0.67	0.6205	1.5505	0.10809110000000002	{'Signing bonus': '10%', 'Job assignment': 'Division D', 'Moving expense coverage': '60%', 'Insurance coverage': '60%', 'Salary': '$40,000'}	75
+0	0	0	0	0		80
+0.375	0.58	0.73	1.685	0.15877499999999997	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '80%', 'Salary': '$36,000'}	78
+0.29500000000000004	0.46499999999999997	0.8300000000000001	1.59	0.11385525000000002	{'Signing bonus': '2%', 'Job assignment': 'Division C', 'Moving expense coverage': '90%', 'Insurance coverage': '80%', 'Salary': '$40,000'}	78
+0.095	0.93	0.7430000000000001	1.7680000000000002	0.06564405000000002	{'Signing bonus': '10%', 'Job assignment': 'Division E', 'Moving expense coverage': '90%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	69
+0.5775	0.6025	0.9	2.08	0.31314937500000006	{'Signing bonus': '8%', 'Job assignment': 'Division C', 'Moving expense coverage': '90%', 'Insurance coverage': '80%', 'Salary': '$32,000'}	75
+0.38	0.62	0.5700000000000001	1.57	0.13429200000000002	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '0%', 'Salary': '$40,000'}	75
+0.2	0.61	0.44050000000000006	1.2505000000000002	0.053741000000000004	{'Signing bonus': '10%', 'Job assignment': 'Division A', 'Moving expense coverage': '60%', 'Insurance coverage': '60%', 'Salary': '$40,000'}	75
+0.34500000000000003	0.43000000000000005	0.6505000000000001	1.4255000000000002	0.09650167500000004	{'Signing bonus': '2%', 'Job assignment': 'Division B', 'Moving expense coverage': '90%', 'Insurance coverage': '60%', 'Salary': '$40,000'}	78
+0.2025	0.6375	0.743	1.583	0.09591665625000001	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '100%', 'Salary': '$38,000'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.585	0.67	0.6605000000000001	1.9155	0.25888297500000007	{'Signing bonus': '10%', 'Job assignment': 'Division B', 'Moving expense coverage': '90%', 'Insurance coverage': '60%', 'Salary': '$32,000'}	75
+0.04	0.9600000000000001	0.8760000000000001	1.8760000000000001	0.033638400000000006	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '100%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	63
+0.51	0.51	0.643	1.663	0.1672443	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '100%', 'Salary': '$32,000'}	78
+0.29500000000000004	0.7050000000000001	0.6839999999999999	1.684	0.14225490000000002	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '70%', 'Insurance coverage': '20%', 'Salary': '$40,000'}	78
+0.08	1.0	0.716	1.796	0.05728	{'Signing bonus': '10%', 'Job assignment': 'Division E', 'Moving expense coverage': '100%', 'Insurance coverage': '100%', 'Salary': '$40,000'}	54
+0	0	0	0	0		80
+0.38	0.62	0.5700000000000001	1.57	0.13429200000000002	{'Signing bonus': '10%', 'Job assignment': 'Division C', 'Moving expense coverage': '60%', 'Insurance coverage': '0%', 'Salary': '$40,000'}	78

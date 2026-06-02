@@ -1,0 +1,101 @@
+my_util	opp_util1	opp_util2	social	nash	agreement	step
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.5571428571428572	0.8578571428571429	0.8866666666666667	2.3016666666666667	0.4237814285714286	{'Price': '1 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 5% + jobs ', 'EmployeeAgreements': 'same conditions', 'Legal Liability': 'IS liable for all activities'}	78
+0.5023809523809524	0.8064285714285715	0.8066666666666666	2.1154761904761905	0.3268083786848073	{'Price': '8 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 2%', 'EmployeeAgreements': 'half fired and half private contracts', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0.6285714285714286	0.7528571428571428	0.8546666666666667	2.236095238095238	0.40444919727891154	{'Price': '1 million $', 'IP': 'IS receives the patents, industrial design rights and trade secrets', 'Stocks': 'BI-Tech founders get 2% + jobs at IS', 'EmployeeAgreements': 'same conditions', 'Legal Liability': 'IS liable for all activities'}	79
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.7999999999999999	0.812857142857143	0.7966666666666666	2.40952380952381	0.5180609523809524	{'Price': '5 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'same conditions', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0.7916666666666666	0.812857142857143	0.86	2.4645238095238096	0.5534202380952381	{'Price': '8 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0.6619047619047619	0.8428571428571429	0.9666666666666668	2.4714285714285715	0.539294784580499	{'Price': '8 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 2% + jobs at IS', 'EmployeeAgreements': 'same conditions', 'Legal Liability': 'IS liable for all activities'}	75
+0.6916666666666667	0.8214285714285716	0.8106666666666666	2.3237619047619047	0.46058412698412704	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'half fired and half private contracts', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.675	0.812857142857143	0.8200000000000001	2.3078571428571433	0.4499164285714287	{'Price': '1 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'IS liable for all activities'}	78
+0	0	0	0	0		80
+0.5023809523809524	0.8064285714285715	0.8066666666666666	2.1154761904761905	0.3268083786848073	{'Price': '8 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 2%', 'EmployeeAgreements': 'half fired and half private contracts', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0.8738095238095238	0.8878571428571429	0.924	2.6856666666666666	0.7168558571428573	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5% + jobs ', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'past activities remains with Bi-Tech'}	75
+0.7273809523809524	0.8278571428571428	0.84	2.395238095238095	0.5058207142857143	{'Price': '8 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 2%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.8833333333333333	0.7828571428571429	0.9039999999999999	2.570190476190476	0.6251375238095238	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'IS liable for all activities'}	78
+0	0	0	0	0		80
+0.9166666666666666	0.842857142857143	0.844	2.6035238095238094	0.6520904761904762	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.861904761904762	0.8728571428571429	0.964	2.6987619047619047	0.7252362176870749	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 2% + jobs at IS', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'IS liable for all activities'}	75
+0.9452380952380952	0.8728571428571429	0.9139999999999999	2.732095238095238	0.754102850340136	{'Price': '5 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 2% + jobs at IS', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'IS liable for all activities'}	78
+0.8107142857142856	0.8278571428571428	0.7899999999999999	2.4285714285714284	0.5302129336734692	{'Price': '5 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 2%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.8833333333333333	0.7828571428571429	0.9039999999999999	2.570190476190476	0.6251375238095238	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'IS liable for all activities'}	78
+0.6916666666666667	0.8214285714285716	0.8106666666666666	2.3237619047619047	0.46058412698412704	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'half fired and half private contracts', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0.8166666666666667	0.7900000000000001	0.8473333333333335	2.4540000000000006	0.5466712222222224	{'Price': '5 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'private contracts', 'Legal Liability': 'IS liable for all activities'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.5571428571428572	0.8578571428571429	0.8866666666666667	2.3016666666666667	0.4237814285714286	{'Price': '1 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 5% + jobs ', 'EmployeeAgreements': 'same conditions', 'Legal Liability': 'IS liable for all activities'}	75
+0.6107142857142857	0.8278571428571428	0.8	2.2385714285714284	0.4044673469387755	{'Price': '1 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 2%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'IS liable for all activities'}	78
+0.5666666666666667	0.7914285714285716	0.8266666666666667	2.184761904761905	0.37074031746031755	{'Price': '8 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'half fired and half private contracts', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0.7571428571428571	0.8878571428571428	0.8840000000000001	2.529	0.5942554693877551	{'Price': '1 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5% + jobs ', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'IS liable for all activities'}	75
+0	0	0	0	0		80
+0.6285714285714286	0.7528571428571428	0.8546666666666667	2.236095238095238	0.40444919727891154	{'Price': '1 million $', 'IP': 'IS receives the patents, industrial design rights and trade secrets', 'Stocks': 'BI-Tech founders get 2% + jobs at IS', 'EmployeeAgreements': 'same conditions', 'Legal Liability': 'IS liable for all activities'}	79
+0	0	0	0	0		80
+0.7666666666666667	0.8500000000000001	0.8373333333333334	2.454	0.5456622222222223	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'private contracts', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.7333333333333334	0.7900000000000001	0.8973333333333333	2.4206666666666665	0.5198551111111113	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'private contracts', 'Legal Liability': 'IS liable for all activities'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.7119047619047619	0.8800000000000001	0.9573333333333334	2.5492380952380955	0.5997465396825399	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 2% + jobs at IS', 'EmployeeAgreements': 'private contracts', 'Legal Liability': 'IS liable for all activities'}	75
+0.7440476190476191	0.7978571428571428	0.8706666666666667	2.412571428571429	0.5168657879818594	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 2%', 'EmployeeAgreements': 'same conditions', 'Legal Liability': 'IS liable for all activities'}	78
+0.9999999999999999	0.842857142857143	0.7940000000000002	2.636857142857143	0.6692285714285715	{'Price': '5 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.7869047619047619	0.8728571428571429	0.9506666666666668	2.6104285714285718	0.6529705736961452	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 2% + jobs at IS', 'EmployeeAgreements': 'same conditions', 'Legal Liability': 'IS liable for all activities'}	75
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.8416666666666667	0.842857142857143	0.8306666666666667	2.5151904761904764	0.5892788888888889	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'same conditions', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0.9571428571428572	0.8878571428571429	0.874	2.7190000000000003	0.7427305510204082	{'Price': '5 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5% + jobs ', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'past activities remains with Bi-Tech'}	75
+0.8	0.8428571428571427	0.804	2.4468571428571426	0.5421257142857143	{'Price': '1 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'IS liable for all activities'}	78
+0	0	0	0	0		80
+0.7238095238095238	0.895	0.9173333333333333	2.536142857142857	0.5942572698412699	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 5% + jobs ', 'EmployeeAgreements': 'private contracts', 'Legal Liability': 'past activities remains with Bi-Tech'}	73
+0.7773809523809523	0.7678571428571428	0.8499999999999999	2.3952380952380947	0.5073798894557822	{'Price': '5 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 2%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'IS liable for all activities'}	78
+0.5023809523809524	0.8064285714285715	0.8066666666666666	2.1154761904761905	0.3268083786848073	{'Price': '8 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 2%', 'EmployeeAgreements': 'half fired and half private contracts', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.594047619047619	0.7764285714285715	0.8506666666666667	2.221142857142857	0.39235770294784583	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 2%', 'EmployeeAgreements': 'half fired and half private contracts', 'Legal Liability': 'IS liable for all activities'}	78
+0	0	0	0	0		80
+0.7166666666666667	0.812857142857143	0.8466666666666667	2.376190476190476	0.4932236507936508	{'Price': '8 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'same conditions', 'Legal Liability': 'past activities remains with Bi-Tech'}	78
+0	0	0	0	0		80
+0.694047619047619	0.7678571428571428	0.8999999999999999	2.3619047619047615	0.4796364795918366	{'Price': '8 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 2%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'IS liable for all activities'}	78
+0.40714285714285714	0.8364285714285715	0.8666666666666667	2.1102380952380955	0.2951397959183674	{'Price': '1 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 5% + jobs ', 'EmployeeAgreements': 'half fired and half private contracts', 'Legal Liability': 'IS liable for all activities'}	78
+0.7440476190476191	0.7978571428571428	0.8706666666666667	2.412571428571429	0.5168657879818594	{'Price': '8 million $', 'IP': 'IS receives all IP', 'Stocks': 'BI-Tech founders get 2%', 'EmployeeAgreements': 'same conditions', 'Legal Liability': 'IS liable for all activities'}	78
+0.7916666666666666	0.812857142857143	0.86	2.4645238095238096	0.5534202380952381	{'Price': '8 million $', 'IP': 'BI-Tech founders maintain all IP', 'Stocks': 'BI-Tech founders get 5%', 'EmployeeAgreements': 'salary raise of 15%', 'Legal Liability': 'past activities remains with Bi-Tech'}	78

@@ -1,0 +1,101 @@
+my_util	opp_util1	opp_util2	social	nash	agreement	step
+0	0	0	0	0		80
+0.2641396825396825	0.5191838235294117	0.5808214285714286	1.3641449346405228	0.07965213748088233	{'Maker': 'Pentax', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	78
+0.36934640522875817	0.5834196428571429	0.7105714285714286	1.6633374766573297	0.15311673664315728	{'Maker': 'Sony', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	78
+0	0	0	0	0		80
+0.27293968253968254	0.7297016806722689	0.17522142857142858	1.1778627917833802	0.034897896108182704	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'Entry model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	75
+0	0	0	0	0		80
+0.3721210084033613	0.8387500000000001	0.5094857142857143	1.7203567226890757	0.1590188958021609	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	70
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.32468571428571424	0.8645588235294118	0.5887642857142857	1.778008823529412	0.16527196327166865	{'Maker': 'Canon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	69
+0.5061142857142857	0.8054159663865547	0.7118	2.0233302521008403	0.2901528323844898	{'Maker': 'Canon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	72
+0.18117497665732957	0.8251428571428572	0.1582214285714286	1.1645392623716153	0.02365335010228701	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'Entry model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	75
+0.20117497665732959	0.9440000000000001	0.48462142857142854	1.6297964052287581	0.09203405712399093	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	78
+0.5369109243697479	0.6591644385026738	0.5180214285714286	1.7140967914438503	0.18333430441902585	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Tamrac', 'Accessory': 'Electronic Flash'}	75
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.20117497665732959	0.9440000000000001	0.48462142857142854	1.6297964052287581	0.09203405712399093	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	72
+0.3173934640522876	0.7981806722689077	0.6463714285714286	1.7619455648926239	0.1637500109401323	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Tamrac', 'Accessory': 'Battery Grip'}	72
+0.3721210084033613	0.8387500000000001	0.5094857142857143	1.7203567226890757	0.1590188958021609	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	70
+0.2221210084033613	0.9387500000000001	0.5821642857142858	1.743035294117647	0.12139062445957384	{'Maker': 'Nikon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	64
+0.388635294117647	0.6889935064935064	0.6519428571428573	1.7295716577540108	0.17456890953238022	{'Maker': 'Canon', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Strap'}	75
+0.2929396825396825	0.8485588235294118	0.5016214285714286	1.6431199346405228	0.12469132531469386	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	72
+0	0	0	0	0		80
+0.20117497665732959	0.9440000000000001	0.48462142857142854	1.6297964052287581	0.09203405712399093	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	69
+0.3721210084033613	0.8387500000000001	0.5094857142857143	1.7203567226890757	0.1590188958021609	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	70
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.2929396825396825	0.8485588235294118	0.5016214285714286	1.6431199346405228	0.12469132531469386	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	75
+0.4729396825396825	0.6276497326203209	0.5359071428571429	1.6364965580171462	0.1590789256387908	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Electronic Flash'}	75
+0	0	0	0	0		80
+0.21646909430438838	0.7199957983193278	0.19222142857142857	1.1286863211951448	0.029959024123175363	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'Entry model', 'Tripod': 'GITZO', 'Bag': 'Artizan and Artist', 'Accessory': 'Battery Grip'}	75
+0.18117497665732957	0.8251428571428572	0.1582214285714286	1.1645392623716153	0.02365335010228701	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'Entry model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	72
+0.3721210084033613	0.8387500000000001	0.5094857142857143	1.7203567226890757	0.1590188958021609	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	70
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.21527394957983192	0.8677941176470589	0.7077642857142857	1.7908323529411767	0.13221990012367774	{'Maker': 'Canon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Lowepro', 'Accessory': 'Battery Grip'}	72
+0	0	0	0	0		80
+0.3721210084033613	0.8387500000000001	0.5094857142857143	1.7203567226890757	0.1590188958021609	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	70
+0.5023077497665733	0.510307295645531	0.34230714285714287	1.3549221882692473	0.08774403813362246	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'Middle range model', 'Tripod': 'GITZO', 'Bag': 'Tamrac', 'Accessory': 'Electronic Flash'}	78
+0	0	0	0	0		80
+0.2821396825396825	0.8273088235294118	0.5120214285714286	1.621469934640523	0.11951432598775978	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	72
+0	0	0	0	0		80
+0.41434957983193277	0.9008571428571429	0.6948	2.0100067226890754	0.2593478421931333	{'Maker': 'Canon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	67
+0	0	0	0	0		80
+0.2221210084033613	0.9387500000000001	0.5821642857142858	1.743035294117647	0.12139062445957384	{'Maker': 'Nikon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	64
+0.41434957983193277	0.9008571428571429	0.6948	2.0100067226890754	0.2593478421931333	{'Maker': 'Canon', 'Body': 'Micro Four Thirds', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	67
+0.3721210084033613	0.8387500000000001	0.5094857142857143	1.7203567226890757	0.1590188958021609	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	70
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.26424052287581695	0.7704600840336135	0.7077714285714286	1.742472035480859	0.1440929029055663	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Battery Grip'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.3196436974789916	0.809138655462185	0.47558571428571433	1.6043680672268907	0.12300362085436865	{'Maker': 'Canon', 'Body': 'Full size', 'Lens': 'High end model', 'Tripod': 'Induro', 'Bag': 'Artizan and Artist', 'Accessory': 'Battery Grip'}	75
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.1527279178338002	0.711686974789916	0.3046214285714286	1.169036321195145	0.03311066467106209	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'Entry model', 'Tripod': 'GITZO', 'Bag': 'Lowepro', 'Accessory': 'Battery Grip'}	75
+0	0	0	0	0		80
+0.3721210084033613	0.8387500000000001	0.5094857142857143	1.7203567226890757	0.1590188958021609	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	70
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.3330285714285714	0.4563266806722689	0.26013571428571425	1.0494909663865544	0.039532778343867245	{'Maker': 'Pentax', 'Body': 'Full size', 'Lens': 'Entry model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	78
+0.2929396825396825	0.8485588235294118	0.5016214285714286	1.6431199346405228	0.12469132531469386	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	75
+0.250022035480859	0.5159485294117647	0.5468214285714286	1.3127919934640522	0.07053914488850502	{'Maker': 'Pentax', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Tamrac', 'Accessory': 'Battery Grip'}	78
+0.2621396825396825	0.7084516806722689	0.18562142857142858	1.15621279178338	0.034472367803120005	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'Entry model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	75
+0.2959865546218487	0.7864600840336136	0.7949142857142858	1.8773609243697482	0.18504142773398974	{'Maker': 'Nikon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'Artizan and Artist', 'Accessory': 'Battery Grip'}	75
+0.2221210084033613	0.9387500000000001	0.5821642857142858	1.743035294117647	0.12139062445957384	{'Maker': 'Nikon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	64
+0	0	0	0	0		80
+0.2107548085901027	0.6342815126050421	0.14347142857142858	0.9885077497665734	0.01917895623715373	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'Entry model', 'Tripod': 'Induro', 'Bag': 'Artizan and Artist', 'Accessory': 'Battery Grip'}	75
+0.3217396825396825	0.5404338235294117	0.5040214285714286	1.3661949346405229	0.08763874541401159	{'Maker': 'Panasonic', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Battery Grip'}	78
+0.18352791783380018	0.8517941176470589	0.6206214285714285	1.6559434640522874	0.0970205072038362	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Lowepro', 'Accessory': 'Battery Grip'}	75
+0	0	0	0	0		80
+0.278822035480859	0.8453235294117648	0.4676214285714286	1.5917669934640524	0.11021595176028545	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Tamrac', 'Accessory': 'Battery Grip'}	72
+0.6029396825396824	0.5908315508021391	0.5101928571428571	1.7039640904846787	0.1817489543304802	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'National Geographic', 'Accessory': 'Memory'}	78
+0	0	0	0	0		80
+0.248022035480859	0.7052163865546219	0.1516214285714286	1.1048598506069096	0.0265199833273603	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'Entry model', 'Tripod': 'GITZO', 'Bag': 'Tamrac', 'Accessory': 'Battery Grip'}	78
+0	0	0	0	0		80
+0.2221210084033613	0.9387500000000001	0.5821642857142858	1.743035294117647	0.12139062445957384	{'Maker': 'Nikon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	64
+0.2221210084033613	0.9387500000000001	0.5821642857142858	1.743035294117647	0.12139062445957384	{'Maker': 'Nikon', 'Body': 'APS-C', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	64
+0	0	0	0	0		80
+0.5111749766573296	0.6862727272727274	0.4931928571428571	1.690640561072914	0.17301473989057758	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Memory'}	75
+0.6415111111111111	0.543688693659282	0.6889428571428572	1.8741426619132504	0.24029110044058066	{'Maker': 'Canon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'Manfrotto', 'Bag': 'National Geographic', 'Accessory': 'Memory'}	78
+0	0	0	0	0		80
+0	0	0	0	0		80
+0.3721210084033613	0.8387500000000001	0.5094857142857143	1.7203567226890757	0.1590188958021609	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	70
+0.3721210084033613	0.8387500000000001	0.5094857142857143	1.7203567226890757	0.1590188958021609	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'Middle range model', 'Tripod': 'Manfrotto', 'Bag': 'Domke', 'Accessory': 'Battery Grip'}	70
+0	0	0	0	0		80
+0.37037497665732955	0.7018409090909091	0.529307142857143	1.6015230286053816	0.1375903801983519	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Domke', 'Accessory': 'Electronic Flash'}	75
+0.578022035480859	0.5663462566844921	0.48659285714285716	1.6309611493082081	0.1592913374923379	{'Maker': 'Nikon', 'Body': 'compact', 'Lens': 'High end model', 'Tripod': 'GITZO', 'Bag': 'Tamrac', 'Accessory': 'Memory'}	78
+0.3369109243697479	0.7612163865546219	0.15733571428571427	1.255463025210084	0.04035065027723743	{'Maker': 'Nikon', 'Body': 'Full size', 'Lens': 'Entry model', 'Tripod': 'GITZO', 'Bag': 'Tamrac', 'Accessory': 'Battery Grip'}	72
