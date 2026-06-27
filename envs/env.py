@@ -18,7 +18,7 @@ class NaiveEnv(gym.Env):
         self.test = test
         
         # ドメイン設定
-        # !!!ここさえ変更すればOK!!!
+        # !!!ここさえ変更すればOK!!
         scenario_number1 = 0
         scenario_number2 = 1
         scenario_number3 = 2
