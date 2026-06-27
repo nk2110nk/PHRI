@@ -1,147 +1,269 @@
-# Transformer-based Negotiation AI Agent
-## Overview
-implementation code for VeNAS and MiPN -based negotiation AI agent architecture
-## Instructions
+# MiPN Negotiator
 
-### Docker
+MiPN Negotiator は、複数人交渉ドメイン向けの強化学習エージェントです。
+学習は主に `ppo_scratch.py` の独自 PPO 実装で行い、テストでは学習済み
+`checkpoint.pt` を読み込んで、ルールベースの交渉相手と交渉させます。
 
-`mipn:dev` イメージは以下でビルドできます。
+## ディレクトリ構成
+
+```text
+.
+|-- train.py                  # 学習の実行入口
+|-- test_negotiator.py        # テスト / 評価の実行入口
+|-- ppo_scratch.py            # MiPN 用 PPO 学習ループ
+|-- policy.py                 # MiPN policy network
+|-- rollout_buffer.py         # rollout buffer
+|-- envs/                     # 交渉環境、ドメイン読み込み、モデル読み込み
+|-- sao/                      # SAO mechanism と baseline negotiator
+|-- domain/                   # GENIUS 形式の domain / utility XML
+|-- run_command/              # 一括テスト用コマンド生成・実行スクリプト
+|-- data_calculator/          # 結果集計スクリプト
+|-- results/                  # checkpoint と評価結果
+|-- data_SMIHT/, data_PHRI/   # 整理済み TSV 実験データ
+`-- summary_tables/           # 集計テーブル出力
+```
+
+## 環境構築
+
+推奨は Docker です。ホスト側のリポジトリを `/app` にマウントして使います。
 
 ```bash
 docker build -t mipn:dev .
-```
-
-対話的にコンテナへ入る場合:
-
-```bash
 docker run --rm -it -v "$(pwd):/app" mipn:dev bash
 ```
 
-学習をそのまま実行する場合:
+コンテナに入った後は `/app` で以下のコマンドを実行します。
+
+ローカル Python で実行する場合は Python 3.8 を使ってください。
 
 ```bash
-docker run --rm -it -v "$(pwd):/app" mipn:dev python3 ./train.py -a Boulware -i Laptop
+python3.8 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade "pip<24" "setuptools<66" "wheel<0.41"
+python -m pip install -r requirements.txt
 ```
 
-### Requirements
+## 利用できる名前
 
-```
-absl-py==0.13.0
-cachetools==4.2.2
-certifi==2021.5.30
-charset-normalizer==2.0.5
-click==8.0.1
-click-config-file==0.6.0
-cloudpickle==1.6.0
-colorlog==6.4.1
-configobj==5.0.6
-cycler==0.10.0
-dill==0.3.4
-future==0.18.2
-gif==3.0.0
-google-auth==1.35.0
-google-auth-oauthlib==0.4.6
-grpcio==1.40.0
-gym==0.26.2
-idna==3.2
-importlib-metadata==4.8.1
-inflect==5.3.0
-joblib==1.0.1
-kiwisolver==1.3.2
-Markdown==3.3.4
-matplotlib==3.4.3
-negmas==0.8.8
-networkx==2.6.2
-numpy==1.21.2
-oauthlib==3.1.1
-pandas==1.3.2
-Pillow==7.2.0
-progressbar2==3.53.2
-protobuf==3.17.3
-psutil==5.8.0
-py4j==0.10.9.2
-pyasn1==0.4.8
-pyasn1-modules==0.2.8
-pyglet==1.5.0
-pyparsing==2.4.7
-pytest-runner==5.3.1
-python-dateutil==2.8.2
-python-utils==2.5.6
-pytz==2021.1
-PyYAML==5.4.1
-requests==2.26.0
-requests-oauthlib==1.3.0
-rsa==4.7.2
-scikit-learn==0.24.2
-scipy==1.7.1
-seaborn==0.11.2
-six==1.16.0
-sklearn==0.0
-stable-baselines3==1.2.0
-stringcase==1.2.0
-tabulate==0.8.9
-tensorboard==2.6.0
-tensorboard-data-server==0.6.1
-tensorboard-plugin-wit==1.8.0
-threadpoolctl==2.2.0
-torch==1.9.0
-tqdm==4.62.2
-typing==3.7.4.3
-typing-extensions==3.10.0.2
-urllib3==1.26.6
-Werkzeug==2.0.1
-zipp==3.5.0
+主な学習用ドメイン:
 
+```text
+Laptop ItexvsCypress IS_BT_Acquisition Grocery thompson Car EnergySmall_A
 ```
 
+未学習ドメインでの汎化テストに使うドメイン:
 
-### Running experiments
-
-- Example command for training:
-```
-python3 ./train.py -a Boulware Conceder Linear TitForTat1 TitForTat2 -i Laptop ItexvsCypress IS_BT_Acquisition Grocery thompson Car EnergySmall_A
-```
-python3 ./train.py -a Boulware -i Laptop 
-
-MiPN_Negotiator checkpoints are saved under `MiPN_Negotiator/checkpoint.pt`. Multiple domains can be trained together; observations are zero-padded to the general domain capacity and invalid issue/value actions are masked during PPO updates. By default, `--general_domain EnergySmall_A` is used, so even `-i Laptop` training creates the same input/action size needed by `Car` and `EnergySmall_A`.
-
-- Example command for testing with a pretrained model:
-```
-python3 ./test_negotiator.py -a Boulware Conceder Linear TitForTat1 TitForTat2 -i Laptop ItexvsCypress IS_BT_Acquisition Grocery thompson Car EnergySmall_A -m ./results/260311-034347/MiPN
+```text
+Coffee Camera Lunch SmartPhone Kitchen
 ```
 
-python3 ./test_negotiator.py -a Boulware -i Laptop -m ./results/Laptop_Boulware-Boulware/20260320-054646-TA/MiPN/
-python3 ./test_negotiator.py -a Boulware -i Laptop -m ./results/Laptop_Boulware-Boulware/MiPN/
+利用できる交渉相手:
 
-- `-a` and `-i` arguments specify agents and issues for training or testing
+```text
+Boulware Linear Conceder TitForTat1 TitForTat2 AgentK HardHeaded Atlas3 AgentGG
+```
 
-## 各ファイル・クラスの説明
-### ./train.py
-- 学習実行
-### ./test_negotiator.py
-- テスト実行
-### ./ppo_scratch.py
-- 学習アルゴリズム実装部
-- `PPO` : 環境を切り替えながら学習ループを回す．ロールアウトを実行し集めたデータで勾配更新の流れ
-- stable-baselines3の実装をベースにAI agent用に改良（複数環境の切り替えやTransformer用の拡張）
-### ./policy.py
-- 各コンポーネントをまとめて全体のモデルにしている部分．ロールアウトバッファに関する定義もここにある
-- `Transformer_Policy` : モデル本体．Transformer，方策・価値ネットワークなどを備え順伝搬等の処理を記述してある
-- `RolloutBuffer` : シミュレーション時のデータを格納するためのバッファの定義&GAEの計算処理もここにある
-### ./NegTransformer.py
-- AIエージェントに用いたTransformer部分の実装．
-### ./envs/env.py
-- gymnasium環境を継承した交渉シミュレーション用環境を定義．
-- `NaiveEnv` : RL用の各種変数やドメイン読み込み，交渉セッション，報酬等の定義
-- `AOPEnv` : `step`を改良しAOP準拠の挙動を実装
-### ./envs/rl_negotiator.py
-- 学習時・テスト時のAIエージェント本体であるNegotiatorを実装
-- `RLNegotiator` : 学習時のエージェント本体．`env.py`の`step`時に選択された`self.next_bid`がそのまま相手に提案される
-- `TestRLNegotiator.py` : テスト時のエージェント本体．チェックポイントからモデルをロードしそれを用いて推論を行う．
-### ./envs/observer.py
-- bid履歴を観測するためのobserverを定義
-- `EmbeddedObserveHistroy` : OpenAIのテキスト埋め込みによる埋込ベクトルをjsonファイルからロードし，実際のbidを埋め込みバッファに格納する
-### ./embedding_model.py
-- 新規に埋め込みベクトルを作成したい場合はこのファイルを実行．
-- `MyEmbedding` : 埋め込みベクトルを新規作成 or 作成済みの埋め込みベクトルを`embeddings`に保存してあるjsonファイルからロードする
-- `self.client = openai.OpenAI(api_key='')`にapi_keyを入力
+## 学習方法
+
+MiPN だけを最小構成で学習する例です。
+
+```bash
+python3 ./train.py -a Boulware -i Laptop --skip_venas
+```
+
+`-a Boulware` のように相手を 1 つだけ指定すると、`Boulware-Boulware`
+として学習します。出力先はデフォルトで次の形になります。
+
+```text
+results/<domain>_<agents>/<timestamp>-TA/MiPN_Negotiator/checkpoint.pt
+```
+
+例:
+
+```text
+results/Laptop_Boulware/20260627-010203-TA/MiPN_Negotiator/checkpoint.pt
+```
+
+相手ペアを明示して学習する例です。
+
+```bash
+python3 ./train.py -a Boulware Conceder -i Laptop --skip_venas
+```
+
+複数ドメイン・複数相手で general policy を学習する例です。
+
+```bash
+python3 ./train.py \
+  -a Boulware Conceder Linear Atlas3 \
+  -i Laptop ItexvsCypress IS_BT_Acquisition Grocery thompson Car EnergySmall_A \
+  --skip_venas
+```
+
+動作確認用に短く学習する場合:
+
+```bash
+python3 ./train.py -a Boulware -i Laptop -t 8192 -n 4 -rs 2048 --skip_venas
+```
+
+出力先を指定する場合:
+
+```bash
+python3 ./train.py -a Boulware -i Laptop -sp ./results/debug_run/ --skip_venas
+```
+
+学習中のドメイン・相手ペア選択をランダムにする場合:
+
+```bash
+python3 ./train.py \
+  -a Boulware Conceder Linear Atlas3 \
+  -i Laptop Car \
+  --random_train \
+  --skip_venas
+```
+
+MiPN と VeNAS baseline の両方を実行する場合は `--skip_venas` を外します。
+
+```bash
+python3 ./train.py -a Boulware -i Laptop
+```
+
+主な学習オプション:
+
+```text
+-a, --agents           交渉相手名。1 つだけ指定すると self-pair になる
+-i, --issue            ドメイン名。複数指定可能
+-sp, --save_path       出力先 root。デフォルトは ./results/
+-t, --timesteps        学習 timesteps。デフォルトは 500000
+-n, --n_envs           並列環境数。デフォルトは 4
+-rs, --n_rollout_steps rollout 長。デフォルトは 2048
+--skip_venas           VeNAS baseline の学習をスキップ
+--random_train         ドメイン・相手ペアをランダム選択して学習
+-gd, --general_domain  padding する observation / action サイズの基準ドメイン
+```
+
+## テスト方法
+
+学習済みモデルのディレクトリを `-m` に指定してテストします。
+
+```bash
+python3 ./test_negotiator.py \
+  -a Boulware \
+  -i Laptop \
+  -m ./results/Laptop_Boulware/20260627-010203-TA/MiPN_Negotiator/
+```
+
+明示的な相手ペアでテストする例:
+
+```bash
+python3 ./test_negotiator.py \
+  -a Boulware Conceder \
+  -i Laptop \
+  -m ./results/Laptop_Boulware-Conceder/20260627-010203-TA/MiPN_Negotiator/
+```
+
+general policy を学習済みドメイン全体でテストする例:
+
+```bash
+python3 ./test_negotiator.py \
+  -a Boulware Conceder Linear Atlas3 \
+  -i Laptop ItexvsCypress IS_BT_Acquisition Grocery thompson Car EnergySmall_A \
+  -m ./results/Laptop-ItexvsCypress-IS_BT_Acquisition-Grocery-thompson-Car-EnergySmall_A_Boulware-Conceder-Linear-Atlas3/20260627-010203-TA/MiPN_Negotiator/
+```
+
+general policy を未学習ドメインでテストする例:
+
+```bash
+python3 ./test_negotiator.py \
+  -a Boulware Conceder Linear Atlas3 \
+  -i Coffee Camera Lunch SmartPhone Kitchen \
+  -m ./results/Laptop-ItexvsCypress-IS_BT_Acquisition-Grocery-thompson-Car-EnergySmall_A_Boulware-Conceder-Linear-Atlas3/20260627-010203-TA/MiPN_Negotiator/
+```
+
+試しにエピソード数を減らす場合:
+
+```bash
+python3 ./test_negotiator.py \
+  -a Boulware \
+  -i Laptop \
+  -m ./results/Laptop_Boulware/20260627-010203-TA/MiPN_Negotiator/ \
+  -e 5
+```
+
+交渉過程の plot を保存する場合:
+
+```bash
+python3 ./test_negotiator.py \
+  -a Boulware \
+  -i Laptop \
+  -m ./results/Laptop_Boulware/20260627-010203-TA/MiPN_Negotiator/ \
+  -p
+```
+
+テスト結果はモデルディレクトリ配下に出力されます。
+
+```text
+<model_dir>/csv/<agent0>-<agent1>/<domain>/det=False_noise=False/*.tsv
+<model_dir>/img/<agent0>-<agent1>/<domain>/det=False_noise=False/*.png
+```
+
+TSV の列:
+
+```text
+my_util  opp_util1  opp_util2  social  nash  agreement  step
+```
+
+## 一括テスト
+
+`results/results_case5` のような results ディレクトリから、全 checkpoint
+に対するテストコマンドを生成できます。
+
+```bash
+python3 ./run_command/command_generate.py results/results_case5 -o run_command/run_test5.sh
+```
+
+生成したスクリプトを実行します。
+
+```bash
+bash run_command/run_test5.sh
+```
+
+既存の `run_command/run_test1.sh` から `run_command/run_test6.sh` は一括実行用の例です。
+結果ディレクトリを移動した後は、上の `command_generate.py` で再生成するのが安全です。
+
+## 結果集計
+
+整理済み TSV データを集計して、CSV とテキストテーブルを出力します。
+
+```bash
+python3 ./data_calculator/summary_data.py \
+  --data-dir data_SMIHT \
+  --output-dir summary_tables
+```
+
+未学習ドメインの結果を集計する場合:
+
+```bash
+python3 ./data_calculator/summary_unexpect_data.py \
+  --data-dir data_SMIHT \
+  --output-dir summary_tables
+```
+
+case 数や行数の不足をエラーとして扱う場合:
+
+```bash
+python3 ./data_calculator/summary_data.py --data-dir data_SMIHT --strict
+```
+
+集計スクリプトは次のような構造を想定しています。
+
+```text
+data_SMIHT/
+|-- expert/<agent0>-<agent1>/<domain>/case1/*.tsv
+`-- general/<agent0>-<agent1>/<domain>/case1/*.tsv
+```
+
+## 補足
+
+- デフォルトの `--general_domain` は `EnergySmall_A` です。複数ドメインで扱えるように、observation と action はこのドメインを基準に padding されます。
+- `test_negotiator.py` の `-m` には、基本的に `MiPN_Negotiator/` で終わるモデルディレクトリを渡してください。その中の `checkpoint.pt` が読み込まれます。
+- Docker 実行時に Gym の deprecation warning が出ることがありますが、依存ライブラリ由来の警告であり、それだけで実行失敗を意味するものではありません。

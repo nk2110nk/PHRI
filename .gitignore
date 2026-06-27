@@ -7,13 +7,6 @@ __pycache__/
 
 # experiment outputs
 results*
-results_past/
-results_case2/
-results_case3/
-results_case4/
-results_case5/
-results_case6/
-run_all.sh
 
 # optional but recommended
 .DS_Store

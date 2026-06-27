@@ -98,9 +98,9 @@ def test_trained(config):
     results = [['my_util', 'opp_util1', 'opp_util2', 'social', 'nash', 'agreement', 'step']] # 変更箇所
 
     # !!!ここさえ変更すればOK!!!
-    scenario_number1 = 2
+    scenario_number1 = 0
     scenario_number2 = 1
-    scenario_number3 = 0
+    scenario_number3 = 2
     # ドメイン設定
     domain, utilities = load_genius_domain(
         issue,
