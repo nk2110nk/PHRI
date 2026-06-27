@@ -19,9 +19,9 @@ class NaiveEnv(gym.Env):
         
         # ドメイン設定
         # !!!ここさえ変更すればOK!!!
-        scenario_number1 = 2
+        scenario_number1 = 0
         scenario_number2 = 1
-        scenario_number3 = 0
+        scenario_number3 = 2
         self.domain, utilities = load_genius_domain(
             domain,
             (scenario_number1, scenario_number2, scenario_number3),
